@@ -1,0 +1,48 @@
+.welcome {
+	font-family: "Comic Sans MS", serif;
+	color: darkgreen;
+}
+
+
+
+body {
+	background-color: lightgray;
+	padding-top: 30px;
+	text-shadow: 0.5px 0.5px green;
+}
+
+
+#menubar {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	text-align: center;
+	width: 100%;
+	background-color: gray;
+	padding: 7px;
+}
+#menubar p {
+	display: inline;
+	padding-right: 20px;
+	padding-left: 20px;
+	border:	 2px solid black;
+}
+#menubar a:visited {
+	color: black;
+}
+
+
+.links {
+	text-align: center;
+	font-family: "Comic Sans MS", serif;
+}
+.links:hover { 
+	color: green;
+	background-color: green;
+ }
+
+
+h1{
+	text-align: center;
+	color: black;
+}

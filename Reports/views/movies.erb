@@ -1,0 +1,36 @@
+<div id="menubar">
+	<!-- <p class="links"> </p> -->
+	<p class="links">To <a href="/stories">`Stories`</a></p>
+	<p class="links">To <a href="/accounts">`Accounts`</a></p>
+	<p class="links">To <a href="/movies">`Movies`</a></p>
+	<p class="links">To <a href="/">`Lobby`</a></p>
+	<!-- <p class="links"></p> -->	
+</div>
+
+
+<h1 class="welcome" > Welcome to `Movies` page ! </h1>
+
+
+
+<h2> Tell us about he movie ! </h2>
+
+<form action="/movies" method="post" title="Was it good ?">
+<ul>
+	<li><input type="text" name="name" value="Name" onclick="value=''"></li>
+	<li><input type="text" name="rating" value="Rating" onclick="value=''"></li>
+	<li><input type="text" name="info" value="Info" onclick="value=''"></li>
+	<p></p>
+	<input type="submit" value="Submit the Movie">
+</form>
+
+
+<h2>Movies have been submitted before ;</h2>
+
+
+<% @movies.each do |mov| %>
+	<ul>
+		<li>Name = <%= mov.name %></li>
+		<li>Rating = <%= mov.rating %></li>
+		<li>Info about = <%= mov.info %></li>
+	</ul>
+<% end %>

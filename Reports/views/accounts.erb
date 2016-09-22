@@ -1,0 +1,36 @@
+<div id="menubar">
+	<!-- <p class="links"> </p> -->
+	<p class="links">To <a href="/stories">`Stories`</a></p>
+	<p class="links">To <a href="/accounts">`Accounts`</a></p>
+	<p class="links">To <a href="/movies">`Movies`</a></p>
+	<p class="links">To <a href="/">`Lobby`</a></p>
+	<!-- <p class="links"></p> -->	
+</div>
+
+<h1 class="welcome" > Welcome to `Accounts` page ! </h1>
+
+
+<h2> Tell us about how much on what ? </h2>
+
+<ul>
+<form action="/accounts" method="post" title="How much ?">
+	<li><input type="text" name="made" value="Made" onclick="value=''"></li>
+	<li><input type="text" name="made_info" value="Info about made" onclick="value=''"></li>
+	<li><input type="text" name="spent" value="Spent" onclick="value=''"></li>
+	<li><input type="text" name="spent_info" value="Info about spent" onclick="value=''"></li>
+	<p></p>
+	<li><input type="submit" value="Submit account move"></li>
+</form>
+</ul>
+
+<h2>Accounts have been submitted before ;</h2>
+
+
+<% @accounts.each do |acc| %>
+	<ul>
+		<li>Made = <%= acc.made %></li>
+		<li>Made Info = <%= acc.made_info %></li>
+		<li>Spent = <%= acc.spent %></li>
+		<li>Spent Info = <%= acc.spent_info %></li>
+	</ul>
+<% end %>

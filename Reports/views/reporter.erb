@@ -1,0 +1,36 @@
+<div id="menubar">
+	<!-- <p class="links"> </p> -->
+	<p class="links">To <a href="/stories">`Stories`</a></p>
+	<p class="links">To <a href="/accounts">`Accounts`</a></p>
+	<p class="links">To <a href="/movies">`Movies`</a></p>
+	<p class="links">To <a href="/">`Lobby`</a></p>
+	<!-- <p class="links"></p> -->	
+</div>
+
+<h1 class="welcome" > Welcome to `Stories` page ! </h1>
+
+
+
+<h1> Tell me what is going on today ? </h1>
+
+
+<form action="/stories" method="post" title="What is going on today ?">
+<ul>
+  <li><input type="text" name="subject" value="Subject .." onclick="value=''"></li>
+
+  <li><textarea type="text" name="story" value="Story here .." rows="4" cols="100"> </textarea></li>
+  <p></p>
+  <input type="submit" value="Submit the Story" target=_blank >
+  </ul>
+</form>
+
+
+<h2>Stories have been submitted before ;</h2>
+
+
+<% @stories.each do |story| %>
+    <ul> 
+     <li><b>Konu</b> = <%= story.subject %> || <b>Entry</b> = <%= story.story %>
+	  </li>
+	</ul>
+<% end %>
