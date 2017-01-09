@@ -1,0 +1,40 @@
+<h1> Ammos </h1>
+
+<table>
+	<tr>
+		<th> <h2> name </h2> </th>
+		<th> <h2> id # </h2> </th>
+		<th> <h2> easy to find ? </h2> </th>
+	</tr>
+		<tr>
+			<% @ammos.each do |a| %>
+			<td> <%= a.name %> </td>
+			<td> # <%= a.game_id %> </td>
+			<td> <% if a.easy_to_find? %>
+						 	<img src="f-up2.jpg" width="75" height="50" name="yes" >
+						 <% else %>
+							<img src="f-down.jpg" width="70" height="50" >
+					 <% end %>
+		</tr>
+			<% end %>
+</table>
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<h2> this page is under construction </h2>
+
+<img src="f-upset.jpg"> 
+-->

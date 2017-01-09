@@ -1,0 +1,23 @@
+<h1> issues of </h1>
+<h2> <%= @magazine.name %> </h2>
+
+
+<table>
+	<tr>
+		<th> <h2> name </h2> </th>
+		<th> <h2> location </h2> </th>
+		<th> <h2> effect </h2> </th>
+		<th> <h2> # id </h2> </th>
+	</tr>
+		<tr>
+			<% @issues.each do |i| %>
+			<td> <%= i.name %> </td>
+			<td> <%= i.location %> </td>
+			<td> <%= i.effect %> </td>
+			<td> # <%= i.game_id %> </td> 
+		</tr>
+	<% end %>
+
+</table>
+			
+

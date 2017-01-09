@@ -1,0 +1,214 @@
+Location listEdit
+Magazine 
+Issue 
+Location 
+Location description 
+Effect 
+
+
+
+
+US simething
+
+007
+#01 
+Whistling in the Dark	Lexington: 
+The Switchboard	On the desk by the terminal in the executive office above the open office and double stairwell area.	
+Makes you more difficult to detect while sneaking.
+0008e737
+007
+#02 
+Urban Camouflage	
+USS Constitution	Ship interior, on a corner table inside the Captain's cabin.	
+Makes you more difficult to detect while sneaking.
+0008e738
+007
+#03 
+Facepaint Fundamentals	
+Federal ration stockpile	On the main table in front of the sofa, in Red Tourette’s base, southeast tunnels near exit.	
+Makes you more difficult to detect while sneaking.
+0008e739
+007
+#04 
+Not the Soldiers 
+You're Looking For	Abandoned shack/Federal surveillance center K-21B	In Federal surveillance center K-21B, deepest area, on the light blue metal computer bank, near the steamer trunk and terminal.	
+Makes you more difficult to detect while sneaking.
+0008e73a
+007
+#05 
+Who Goes There?	
+Fort Strong	On the desk of General Brock, southwest corner of the ground floor.	
+Makes you more difficult to detect while sneaking.
+0008e73b
+007
+#06 
+Squeaky Floorboard, Sudden Death	
+Fort Hagen	Command Center, on the side table of the bedroom and kitchenette room, just east of the armory.	
+Makes you more difficult to detect while sneaking.
+0008e73c
+007
+#07 
+Getting the Drop on Communists	
+Libertalia	By the red chair on the main shanty ship, halfway up, same level as the white metal window wall.	
+Makes you more difficult to detect while sneaking.
+0008e73e
+007
+#08 
+Bushes, Boxes and Beehives Camouflage 
+Special	National Guard Training Yard	On a table in the cafeteria of the barracks, near a cooler.	
+Makes you more difficult to detect while sneaking.
+0008e73d
+007
+#09 
+Look Better in Black	
+Revere satellite array	In the shanty hut atop the central satellite support (without the dish).	
+Makes you more difficult to detect while sneaking.
+0008e73f
+007
+#10 
+Tiptoe Through the Tulips	
+USAF Satellite Station Olivia	Inside the computer room unlocked by terminal (southeast interior), on the desk with the mini nuke.	
+Makes you more difficult to detect while sneaking.
+0008e740
+
+
+
+
+
+
+
+
+
+
+1
+#01	
+Attack Of The Fishmen	Skylanes 
+Flight 1981	On the restroom toilet below the cockpit. 
+Do +5% damage against Mirelurks.	
+0016969f
+1
+#02	
+Rise of the Mutants!	
+Trinity Church	On the lecturn, by the steamer trunk at the east side of the church interior. 
+Do +5% damage against Super Mutants.	
+001696a7
+1
+#03	
+Deep Sea Terror! "Sinister Seafood Strikes!!"	
+Outpost Zimonja	On the workshop. 
+Do +5% damage at night.	
+001696a0
+1
+#04	
+Invasion of the Zetans	
+Hubris Comics	Top floor (the film studio), in the “star” restroom (southeast corner of room), on a table under an irradiated blood pack, near the steamer trunk. 
+Do +5% damage with the Alien Blaster.	
+0016969d
+1
+#05	
+When Apes Go Bananas!!! "A Gorilla Ate My Patrol Car!"	
+Railroad HQ	Inside Railroad HQ (Freedom Trail mission must be completed to open the Railroad HQ), on a metal desk in the brick crypt area, west area of the room. 
+Do +5% damage with the Cryolator.	
+001696a2
+1
+#06
+My Brain and I... (A Twisted Love Tale)	
+Boston mayoral shelter	Lower level b
+edroom, southwest corner, on a small table. 
+Regenerate 1 point of health per minute.	
+0016969a
+1
+#07	
+The Man Who Could Stop Time	
+Vault 114	In the living quarters area, on a container in the blocked corridor, under the “Laundry” sign. 
+Gain +5 Action Points.	
+001696a1
+1
+#08	
+Attack of the Metal Men	
+Dunwich Borers	At the bottom of the pit below terminal #3, on a table near the steamer trunk. 
+Take 5% less damage from robots.	
+0016969c
+1
+#09	
+Have Dog, Will Travel!	
+The Institute	On the triangular table of the outside balcony, accessed via Holdren’s quarters, north of atrium. 
+Your canine companion permanently takes 10% less damage.	
+001696a5
+1
+#10	
+The Mad Russian's Revenge	
+Pickman Gallery	To the right of the steamer trunk (or on the floor infront) in the last tunnel chamber, where one meets Pickman. 
+Gain +5 Poison Resistance.	
+0016969e
+1
+#11	
+The Starlet Sniper	
+Coast Guard Pier	In the basement, on the toilet inside the locked cell (Expert lock or use terminal to unlock the cell), by the secured storage room. 
+Do +5% damage with scoped weapons.	
+0016969b
+1
+#12	
+Curse of the Burned!	
+Crater of Atom	Top floor (up the stairs) of the central metal shack built into the western rocks. 
+Do +5% damage against Ghouls.	
+001696a6
+1
+#13	
+Giant Insects Invade	
+Sentinel site	In the first main area right at the start of Sentinel Site Prescott, in one of the outer hallway areas, under some stairs, this magazine is found on the desk as part of a large row of work terminals on the eastern side of the facility. 
+Gain +5 Radiation Resistance.	
+001696a3
+1
+#14	
+Rise of the Radiated	
+East Boston Preparatory School	On a desk in the computer room, top floor, southeast corner. 
+RadAway heals +5% radiation damage.	
+001696a4
+
+
+
+
+
+
+
+
+
+
+
+
+
+Astoundingly Awesome Tales #
+
+#01 Attack Of The Fishmen	Skylanes Flight 1981	On the restroom toilet below the cockpit.	Do +5% damage against Mirelurks. 0016969f
+#02 Rise of the Mutants!	Trinity Church	On the lecturn, by the steamer trunk at the East side of the church interior.	Do +5% damage against Super Mutants. 001696a7
+#03 Deep Sea Terror! "Sinister Seafood Strikes!!"	Outpost Zimonja	On the workshop.	Do +5% damage at night. 001696a0
+#04 Invasion of the Zetans	Hubris Comics	Top floor (the film studio), in the “star” restroom (south east corner of room), on a table under a irradiated blood pack, near the steamer trunk.	Do +5% damage with the Alien Blaster. 0016969d
+#05 When Apes Go Bananas!!! "A Gorilla Ate My Patrol Car!"	Railroad HQ	Inside Railroad HQ (Freedom Trail mission must be completed to open the Railroad HQ), on a metal desk in the brick crypt area, West area of the room.	Do +5% damage with the Cryolator. 001696a2
+#06 My Brain and I... (A Twisted Love Tale)	Boston mayoral shelter	Lower level bedroom, Southwest corner, on a small table.	Regenerate 1 point of health per minute. 0016969a
+#07 The Man Who Could Stop Time	Vault 114	In the living quarters area, on a container in the blocked corridor, under the “Laundry” sign.	Gain +5 Action Points. 001696a1
+#08 Attack of the Metal Men	Dunwich Borers	At the bottom of the pit below terminal 3, on a table near the steamer trunk.	Take 5% less damage from robots. 0016969c
+#09 Have Dog, Will Travel!	The Institute	On the triangular table of the outside balcony, accessed via Holdren’s quarters, North of atrium.	Your canine companion permanently takes 10% less damage. 001696a5
+#10 The Mad Russian's Revenge	Pickman Gallery	To the right or of the steamer trunk (or on the floor infront) in the last tunnel chamber, where you meet Pickman.	Gain +5 Poison Resistance. 0016969e
+#11 The Starlet Sniper	Coast Guard Pier	In the basement, on the toilet inside the locked cell (expert lock or use terminal to unlock the cell), by the secured storage room.	Do +5% damage with scoped weapons. 0016969b
+#12 Curse of the Burned!	Crater of Atom	Top floor (up the stairs) of the central metal shack built into the Western rocks.	Do +5% damage against Ghouls. 001696a6
+#13 Giant Insects Invade	Sentinel site	In the first main area right at the start of Sentinel Site Prescott, in one of the outer hallway areas, under some stairs, this magazine is found on the desk as part of a large row of work terminals on the Eastern side of the facility.	Gain +5 Radiation Resistance. 001696a3
+#14 Rise of the Radiated	East Boston Preparatory School	On a desk in the computer room, top floor, Southeast corner.	RadAway heals +5% radiation damage. 001696a4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
