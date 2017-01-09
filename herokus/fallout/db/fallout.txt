@@ -1,0 +1,300 @@
+
+</dt><dt> #
+</dt><dt> # MALE CHARACTER
+</dt><dt> #
+</dt><dt> # AQUABOY
+</dt><dd> # player.addperk 000E36F9; 1
+</dd><dd> # player.addperk 001D248D; 2
+</dd><dt> # LADY KILLER
+</dt><dd> # player.addperk 00019AA3; 1
+</dd><dd> # player.addperk 00065E33; 2
+</dd><dd> # player.addperk 00065E34; 3
+</dd><dt> # PARTY BOY
+</dt><dd> # player.addperk 0004D887; 1
+</dd><dd> # player.addperk 001D2473; 2
+</dd><dd> # player.addperk 001D2474; 3
+</dd><dt> # ACTION BOY
+</dt><dd> # player.addperk 0004D869; 1
+</dd><dd> # player.addperk 00065DF5; 2
+</dd><dt> #
+</dt><dt> # FEMALE CHARACTER
+</dt><dt> #
+</dt><dt> # AQUAGIRL
+</dt><dd> # player.addperk 000E9453; 1
+</dd><dd> # player.addperk 001D248E; 2
+</dd><dt> # BLACK WIDOW
+</dt><dd> # player.addperk 0004A0D4; 1
+</dd><dd> # player.addperk 00065E31; 2
+</dd><dd> # player.addperk 00065E32; 3
+</dd><dt> # PARTY GIRL
+</dt><dd> # player.addperk 0004D888; 1
+</dd><dd> # player.addperk 001D2475; 2
+</dd><dd> # player.addperk 001D2476; 3
+</dd><dt> # ACTION GIRL
+</dt><dd> # player.addperk 0004D872; 1
+</dd><dd> # player.addperk 00065DF6; 2
+</dd></dl>
+</td></tr></table>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> Provides all collectible magazines
+<p>(In order to gain the magazine boosts, they must be dropped then picked up.)
+</p>
+</th></tr>
+<tr>
+<td>
+
+
+
+
+
+
+
+
+#01 Whistling in the Dark	Lexington: The Switchboard	On the desk by the terminal in the executive office above the open office and double stairwell area.	Makes you more difficult to detect while sneaking.
+#02 Urban Camouflage	USS Constitution	Ship interior, on a corner table inside the Captain's cabin.	Makes you more difficult to detect while sneaking.
+#03 Facepaint Fundamentals	Federal ration stockpile	On the main table in front of the sofa, in Red Tourette’s base, southeast tunnels near exit.	Makes you more difficult to detect while sneaking.
+#04 Not the Soldiers You're Looking For	Abandoned shack/Federal surveillance center K-21B	In Federal surveillance center K-21B, deepest area, on the light blue metal computer bank, near the steamer trunk and terminal.	Makes you more difficult to detect while sneaking.
+#05 Who Goes There?	Fort Strong	On the desk of General Brock, southwest corner of the ground floor.	Makes you more difficult to detect while sneaking.
+#06 Squeaky Floorboard, Sudden Death	Fort Hagen	Command Center, on the side table of the bedroom and kitchenette room, just east of the armory.	Makes you more difficult to detect while sneaking.
+#07 Getting the Drop on Communists	Libertalia	By the red chair on the main shanty ship, halfway up, same level as the white metal window wall.	Makes you more difficult to detect while sneaking.
+#08 Bushes, Boxes and Beehives Camouflage Special	National Guard Training Yard	On a table in the cafeteria of the barracks, near a cooler.	Makes you more difficult to detect while sneaking.
+#09 Look Better in Black	Revere satellite array	In the shanty hut atop the central satellite support (without the dish).	Makes you more difficult to detect while sneaking.
+#10 Tiptoe Through the Tulips	USAF Satellite Station Olivia	Inside the computer room unlocked by terminal (southeast interior), on the desk with the mini nuke.	Makes you more difficult to detect while sneaking.
+
+
+
+
+
+
+
+
+
+
+
+
+000ce97d .44 pistol .44 round 
+00004822 10mm pistol 10mm round
+000dc8e7 Thedeliverfo4	Deliverer	25	
+001025ac Flare gun Flare
+
+
+
+
+'.308 Round' => '0001F66B',
+	'.38 Round' => '0004CE87',
+	'.44 Round' => '0009221C',
+	'.45 Round' => '0001F66A',
+	'.50 Caliber' => '0001F279',
+	'10mm Round' => '0001F276',
+	'5.56 Round' => '0001F278',
+	'5mm Round' => '0001F66C',
+	'Shotgun Shell' => '0001F673',
+	'Mini Nuke (fat man)' => '000E6B2E',
+	'Missile' => '000CABA3',
+	'2mm Electromagnetic Cartridge' => '0018ABDF',
+	'Alien Blaster Round' => '001025AA',
+	'Cryo Cell' => '0018ABE2',
+	'Fusion Cell (weapons)' => '000C1897',
+	'Fusion Core (power armor)' => '00075FE4',
+	'Gamma Round' => '000DF279',
+	'Plasma Cartridge' => '0001DBB7',
+	'Flamer Fuel' => '000CAC78',
+	'Flare' => '001025AE',
+	'Junk' => '000E942C',
+	'Cannonball' => '000FD11C',
+	'Railway Spike' => '000FE269',
+	'Berserk Syringe' => '00058AE9',
+	'Bleed Out Syringe' => '00058AEB',
+	'Bloatfly Larva Syringe' => '000375BB',
+	'Endangerol Syringe' => '00058AF2',
+	'Lock Joint Syringe' => '00058AF4',
+	'Mind Cloud Syringe' => '00058AF5',
+	'Pax Syringe' => '00058AF7',
+	'Radscorpion Venom Syringe' => '00058B0C',
+	'Yellow Belly Syringe' => '00058B0E'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</dd><dt> #Covert Operations Manual
+</dt><dd>player.additem 0008e737
+</dd><dd>player.additem 0008e738
+</dd><dd>player.additem 0008e739
+</dd><dd>player.additem 0008e73a
+</dd><dd>player.additem 0008e73b
+</dd><dd>player.additem 0008e73c
+</dd><dd>player.additem 0008e73e
+</dd><dd>player.additem 0008e73d
+</dd><dd>player.additem 0008e73f
+</dd><dd>player.additem 0008e740
+</dd><dt> #Grognak the Barbarian
+</dt><dd>player.additem 8e741
+</dd><dd>player.additem 8e742
+</dd><dd>player.additem 8e743
+</dd><dd>player.additem 8e744
+</dd><dd>player.additem 8e745
+</dd><dd>player.additem 8e746
+</dd><dd>player.additem 8e747
+</dd><dd>player.additem 8e748
+</dd><dd>player.additem 8e749
+</dd><dd>player.additem 8e74a
+</dd><dt> #Guns and Bullets
+</dt><dd>player.additem 92a83
+</dd><dd>player.additem 92a87
+</dd><dd>player.additem 92a88
+</dd><dd>player.additem 92a89
+</dd><dd>player.additem 92a8a
+</dd><dd>player.additem 92a8b
+</dd><dd>player.additem 92a8c
+</dd><dd>player.additem 92a8d
+</dd><dd>player.additem 92a8e
+</dd><dd>player.additem 92a8f
+</dd><dt> #Live &amp; Love
+</dt><dd>player.additem 184da7
+</dd><dd>player.additem 184db9
+</dd><dd>player.additem 184dc6
+</dd><dd>player.additem 185cc2
+</dd><dd>player.additem 185ccd
+</dd><dd>player.additem 1c2e24
+</dd><dd>player.additem 1c2e26
+</dd><dd>player.additem 1c2e28
+</dd><dd>player.additem 1d1cd6
+</dd><dt> #Massachusetts Surgical Journal
+</dt><dd>player.additem 8e74b
+</dd><dd>player.additem 8e74c
+</dd><dd>player.additem 8e74d
+</dd><dd>player.additem 8e74e
+</dd><dd>player.additem 8e74f
+</dd><dd>player.additem 8e750
+</dd><dd>player.additem 8e751
+</dd><dd>player.additem 1d1f53
+</dd><dd>player.additem 1d1f55
+</dd><dt> #Tales of a Junktown Jerky Vendor
+</dt><dd>player.additem 92a63
+</dd><dd>player.additem 92a64
+</dd><dd>player.additem 92a65
+</dd><dd>player.additem 92a66
+</dd><dd>player.additem 92a67
+</dd><dd>player.additem 92a68
+</dd><dd>player.additem 92a69
+</dd><dd>player.additem 92a6a
+</dd><dt> #Tesla Science Magazine
+</dt><dd>player.additem 92a78
+</dd><dd>player.additem 92a79
+</dd><dd>player.additem 92a7a
+</dd><dd>player.additem 92a7b
+</dd><dd>player.additem 92a7c
+</dd><dd>player.additem 92a7d
+</dd><dd>player.additem 92a7e
+</dd><dd>player.additem 92a7f
+</dd><dd>player.additem 92a80
+</dd><dt> #Tumblers Today
+</dt><dd>player.additem 92a6d
+</dd><dd>player.additem 92a6f
+</dd><dd>player.additem 92a70
+</dd><dd>player.additem 92a71
+</dd><dd>player.additem 92a72
+</dd><dt> #Unstoppables
+</dt><dd>player.additem 132979
+</dd><dd>player.additem 135f03
+</dd><dd>player.additem 135f04
+</dd><dd>player.additem 135f05
+</dd><dd>player.additem 135f06
+</dd><dd>player.additem 135f07
+</dd><dt> #Wasteland Survival Guide
+</dt><dd>player.additem 8e75e
+</dd><dd>player.additem 135f0a
+</dd><dd>player.additem 135f0d
+</dd><dd>player.additem 135f0e
+</dd><dd>player.additem 185cba
+</dd><dd>player.additem 185cbd
+</dd><dd>player.additem 185cc4
+</dd><dd>player.additem 185cca
+</dd><dd>player.additem 185cd8
+</dd><dt> #Hot Rodder
+</dt><dd>player.additem 180a24
+</dd><dd>player.additem 185cbf
+</dd><dd>player.additem 185cd1
+</dd><dt> #La Coiffe
+</dt><dd>player.additem 9473e
+</dd><dd>player.additem 1c63ed
+</dd><dt> #Picket Fences
+</dt><dd>player.additem 180a36
+</dd><dd>player.additem 184d8b
+</dd><dd>player.additem 184db7
+</dd><dd>player.additem 185cdd
+</dd><dd>player.additem 185cee
+</dd><dt> #RobCo Fun
+</dt><dd>player.additem 184da1
+</dd><dd>player.additem 184db2
+</dd><dd>player.additem 184dc4
+</dd><dd>player.additem 1c1418
+</dd><dt> #Taboo Tattoos
+</dt><dd>player.additem 180a2a
+</dd><dd>player.additem 184d9b
+</dd><dd>player.additem 184da5
+</dd><dd>player.additem 184dc0
+</dd><dd>player.additem 185ce2
+</dd><dt> #Total Hack
+</dt><dd>player.additem 94734
+</dd><dd>player.additem 94735
+</dd><dd>player.additem 94736
+</dd><dt> #You're SPECIAL!
+</dt><dd>player.additem 1a62d4
+
+
+
+<dl><dd>player.setlevel 50
+</dd><dd>player.setav strength 999
+</dd><dd>player.setav perception 999
+</dd><dd>player.setav endurance 999
+</dd><dd>player.setav charisma 999
+</dd><dd>player.setav intelligence 999
+</dd><dd>player.setav agility 999
+</dd><dd>player.setav luck 999
+</dd><dd>player.modav actionpoints 10000000000
+</dd><dd>player.modav carryweight 10000000000
+</dd><dd>player.setav health 9999999
+</dd><dd>player.setav healrate 9999999
+</dd><dd>player.setav radresistexposure 9999999
+</dd><dd>player.setav radresistingestion 9999999
+</dd><dd>player.setav damageresist 9999999
+</dd><dd>player.setav energyresist 9999999
+</dd><dd>player.setav fireresist 9999999
+</dd><dd>player.setav poisonresist 9999999 
+</dd><dd>player.setav unarmeddamage 9999999 
+
+
+
+#
+
+	</dd><dt> # POOL BALLS
+	</dt><dd>player.additem 00059AFC 25; Cue Ball
+	</dd><dd>player.additem 0018E4DA 25; One Ball
+	</dd><dd>player.additem 00059AFD 25; Two Ball
+	</dd><dd>player.additem 0018E4DC 25; Three Ball
+	</dd><dd>player.additem 0018E4D5 25; Four Ball
+	</dd><dd>player.additem 0018E4DE 25; Five Ball
+	</dd><dd>player.additem 0018E4E0 25; Six Ball
+	</dd><dd>player.additem 0018E4E2 25; Seven Ball
+	</dd><dd>player.additem 00059AFE 25; Eight Ball
+	</dd><dd>player.additem 0018E4E5 25; Nine Ball
+	</dd><dd>player.additem 0018E4E7 25; Ten Ball
+	</dd><dd>player.additem 0018E4E9 25; Eleven Ball
+	</dd><dd>player.additem 0018E4EB 25; Twelve Ball
+	</dd><dd>player.additem 0018E4ED 25; Thirteen Ball
+	</dd><dd>player.additem 0018E4EF 25; Fourteen Ball
+	</dd><dd>player.additem 0018E4F1 25; Fifteen Ball
+
+#

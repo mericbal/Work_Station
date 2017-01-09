@@ -1,0 +1,26 @@
+<h1> WEAPONS </h1>
+
+
+<table>
+	<tr>
+		<th> <h2> name </h2> </th>
+		<th> <h2> ammo type </h2> </th>
+		<th> <h2> id # </h2> </th>
+		<th> <h2> can be modified ? </h2> </th>
+	</tr>
+		<tr>
+			<% @weapons.each do |w| %>
+			<td> <%= w.name %> </td>
+			<td> <a href="/ammos"> <%= @ammos.find(w.ammo_id).name %> </a></td>
+			<td> # <%= w.game_id %> </td>
+			<td> <% if w.modified? %>
+						<img src="f-up2.jpg" width="75" height="50" name="yes" >
+						<% else %>
+						<img src="f-down.jpg" width="70" height="50" >
+						<% end %>
+		</tr>
+	<% end %>
+
+</table>
+			
+

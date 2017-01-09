@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fallout</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+<body id='main-body'>
+
+  <div id='menubar'>
+  	<ul>
+  		<li><a class="links" href="/"> home </a></li>
+
+  		<li class="dropmenu">
+  			<a class="links" class="dropbutton" href="#"> items </a>
+  			<div class="dropmenu-content">
+  				<a class="links" href="/weapons"> weapons </a>
+  				<a class="links" href="/armors"> armors </a>
+  				<a class="links" href="/perks"> perks </a>
+  				<a class="links" href="/ammos"> ammos </a>
+          <a class="links" href="/craftables"> craftables </a>
+          <a class="links" href="/foods"> foods </a>
+          <a class="links" href="/junks"> junks </a>
+          <a class="links" href="/magazines"> magazines </a>
+  			</div>
+  		</li>
+
+      <li><a class="links" href="/weathers"> weather modes </a></li>
+      <li id="image"> <img src="f-4.jpg" width="100" height="42"> </li>
+      <li id="image" ><a class="links" href="http://www.fallout4map.com" target="_blank" > interactive map </a></li>
+
+		  <li id='trailers'	class="t-menu">
+		  	<a class="links" class="t-button" href="#"> trailers </a>
+		  	<div class="t-menu-content">
+		  		<a class="links" href="https://www.youtube.com/watch?v=P8kcjyW0scI" target="_blank"> war never changes </a>
+		  		<a class="links" href="https:/  /www.youtube.com/watch?v=X5aJfebzkrM" target="_blank"> launch trailer </a>
+		  		<a class="links" href="https://www.youtube.com/watch?v=GE2BkLqMef4" target="_blank"> official trailer </a>
+		  		<a class="links" href="https://www.youtube.com/watch?v=k3IlHBBGCIw" target="_blank"> wanderer trailer </a>
+		  	</div>
+  		</li>
+
+  	</ul>
+	</div>
+
+
+
+
+</body> <!-- main body close -->
+
+  <body id='yield'>
+    <%= yield %>
+  </body>
+
+
+</html>

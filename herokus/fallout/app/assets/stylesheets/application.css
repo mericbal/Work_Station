@@ -1,0 +1,98 @@
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li { 
+	float: left;
+}
+
+li#image {
+	float: right;
+}
+
+li#trailers {
+	float: right;
+}
+
+li a.links, .dropbutton, .t-button {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 23px;
+	text-decoration: none;
+}
+
+li a:hover, .dropmenu:hover .dropbutton .links{
+	background-color: red;
+}
+
+li.dropmenu {
+	display: inline-block;
+}
+
+.dropmenu-content, .t-menu-content {
+	display: none;
+	position: absolute;
+	background-color: gray;
+	min-width: 100px;
+	/*box-shadow: 0px*/
+}
+
+.dropmenu-content a.links , .t-menu-content a.links {
+	color: black;
+	padding: 12px 20px;
+	display: block;
+	text-align: center;
+}
+
+.dropmenu:hover .dropmenu-content {
+	display: block;
+}
+
+
+
+/*trailer menu */
+
+
+
+li a.links:hover, .t-menu:hover .t-button {
+	background-color: darkred;
+}
+
+li.t-menu {
+	/*display: inline-block;*/
+}
+
+.t-menu:hover .t-menu-content {
+	display: block;
+}
+
+
+
+
+
+/*tables*/
+
+th, td { 
+	text-align: center;
+	width: 300px;
+	border: 1px solid darkgray; 
+}
+
+td {
+	text-align: center;
+}
+
+#main-body {
+	/*background-color: grey;*/
+	text-align: center;
+	table-layout: all;
+}
+
+
+
+/**/

@@ -9,5 +9,9 @@ createdb: could not connect to database template1: could not connect to server: 
 pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
 
 
+# 
+
+rm /usr/local/var/postgres/postmaster.pid
+
 
 
