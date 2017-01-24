@@ -1,9 +1,25 @@
+#menubar {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	width: 100%;
+	border-bottom: 1px solid black;
+}
+
+#main-body {
+	background-color: gray;
+	padding-top: 50px;
+	text-align: center;
+}
+
+
+
 ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #333;
+	background-color: black;
 }
 
 li { 
@@ -37,7 +53,7 @@ li.dropmenu {
 .dropmenu-content, .t-menu-content {
 	display: none;
 	position: absolute;
-	background-color: gray;
+	background-color:  darkgray;
 	min-width: 100px;
 	/*box-shadow: 0px*/
 }
