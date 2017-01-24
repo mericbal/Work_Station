@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+a = %w( a b c d e f g )
+
+
+a.each do |s|
+  Settlement.create(name: s)
+end
+
+
+#
