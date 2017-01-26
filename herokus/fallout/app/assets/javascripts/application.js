@@ -14,3 +14,13 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+$(document).on('turbolinks:load', function () {
+
+	$('#slide').hide()
+	$('#header').click(function(){
+	    $('#slide').slideToggle(400)
+	});
+});
+

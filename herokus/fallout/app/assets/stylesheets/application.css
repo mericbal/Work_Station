@@ -1,9 +1,39 @@
+#slide, #header {
+	width: 30%;
+	padding: 4px;
+	text-align: center;
+	background-color: darkred;
+	border: solid 2px black;
+};
+#slide {
+	/*width: 10%;*/
+	/*padding: 20px;*/
+	/*padding-bottom: 20px;*/
+	/*text-align: center;*/
+}
+#form-signup {
+	/*border-right: 1px solid black;*/
+	/*padding-right: 10px; */
+	/*float: left;*/
+}
+
+
+
+
+
+
+
+/*############################*/
+
+
+
+
 #menubar {
 	position: fixed;
 	top: 0px;
 	right: 0px;
 	width: 100%;
-	border-bottom: 1px solid black;
+	/*border-bottom: 1px solid black;*/
 }
 
 #main-body {
