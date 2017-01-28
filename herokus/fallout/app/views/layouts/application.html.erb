@@ -17,9 +17,9 @@
   		<li class="dropmenu">
         <%= link_to 'items', '#', { :class => 'links', :class => 'dropbutton'} %>
   			<div class="dropmenu-content">
-        <% a=['weapons', 'armors', 'ammos', 'perks', 'craftables', 'foods', 'junks', 'magazines'] %>
+        <% a=['weapons', 'armors', 'ammos', 'perks', 'craftables', 'foods', 'junks', 'magazines', 'settlements'] %>
         <% a.each do |a| %>
-        <%= link_to a, "/#{a}", { :class => 'links'} %>
+        <%= link_to a, "/#{a}", { :class => 'links' } %>
         <% end %>
   			</div>
   		</li>

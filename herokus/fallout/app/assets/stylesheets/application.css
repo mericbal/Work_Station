@@ -19,10 +19,6 @@
 
 
 
-
-
-
-
 /*############################*/
 
 
@@ -66,14 +62,14 @@ li#trailers {
 
 li a.links, .dropbutton, .t-button {
 	display: inline-block;
-	color: white;
+	color: tan;
 	text-align: center;
 	padding: 14px 23px;
 	text-decoration: none;
 }
 
 li a:hover, .dropmenu:hover .dropbutton .links{
-	background-color: red;
+	background-color: darkred;
 }
 
 li.dropmenu {
