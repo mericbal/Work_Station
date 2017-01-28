@@ -1,0 +1,22 @@
+<h2> settlements </h2>
+
+<table>
+	<tr>
+		<% a = %w( name settlers water food power defense found? secure? ) %>
+			<% a.each do |h| %>
+				<th><h3> <%= h %> </h3></th>
+			<% end %>
+	</tr>
+	<tr> <% @settlements.each do |s| %>
+				<td> <%= s.name %> </td>
+				<td> <%= s.settler %> </td>
+				<td> <%= s.water %> </td>
+				<td> <%= s.food %> </td>
+				<td> <%= s.power %> </td>
+				<td> <%= s.defense %> </td>
+				<td> <%= s.found %> </td>
+				<td> <%= s.secure %> </td>
+	</tr>
+				<% end %>
+
+</table>

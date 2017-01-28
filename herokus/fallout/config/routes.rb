@@ -12,5 +12,6 @@ Rails.application.routes.draw do
   get '/weathers' => 'weather#index'
   get '/magazines' => 'magazine#index'
   get '/magazines/:id' => 'magazine#show'
+  get '/settlements' => 'settlement#index'
 
 end

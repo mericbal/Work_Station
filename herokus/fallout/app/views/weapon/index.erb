@@ -3,10 +3,10 @@
 
 <table>
 	<tr>
-		<th> <h2> name </h2> </th>
-		<th> <h2> ammo type </h2> </th>
-		<th> <h2> id # </h2> </th>
-		<th> <h2> can be modified ? </h2> </th>
+		<% a=['name', 'ammo type', 'id #', 'can be modified ?'] %>
+			<% a.each do |h| %>
+				<th> <h2> <%= h %> </h2> </th>
+			<% end %>
 	</tr>
 		<tr>
 			<% @weapons.each do |w| %>
