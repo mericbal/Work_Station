@@ -14,9 +14,8 @@
 				<td> <%= s.food %> </td>
 				<td> <%= s.power %> </td>
 				<td> <%= s.defense %> </td>
-				<td> <%= s.found %> </td>
-				<td> <%= s.secure %> </td>
+				<td id="founded" > <% if s.found? then %> <img src="f-up2.jpg" width="75" height="50" name="yes"> <% else %> <img src="f-down.jpg" width="70" height="50" > <% end %> </td>
+				<td id="secured" > <% if secure?(s) then %> <img src="f-up2.jpg" width="75" height="50" name="yes"> <% else %> <img src="f-down.jpg" width="70" height="50" > <% end %> </td>
 	</tr>
-				<% end %>
-
+			<% end %>
 </table>

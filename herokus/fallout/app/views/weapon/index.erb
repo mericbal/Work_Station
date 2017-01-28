@@ -11,7 +11,11 @@
 		<tr>
 			<% @weapons.each do |w| %>
 			<td> <%= w.name %> </td>
-			<td> <a href="/ammos"> <%= @ammos.find(w.ammo_id).name %> </a></td>
+			<td> <%= link_to @ammos.find(w.ammo_id).name, ammos_path %> </td>
+			<!-- or   
+			<td> <%= button_to @ammos.find(w.ammo_id).name, ammos_path, method: :get %> </td>
+			 -->
+
 			<td> # <%= w.game_id %> </td>
 			<td> <% if w.modified? %>
 						<img src="f-up2.jpg" width="75" height="50" name="yes" >

@@ -79,13 +79,12 @@ ActiveRecord::Schema.define(version: 20170128032140) do
 
   create_table "settlements", force: :cascade do |t|
     t.string   "name"
-    t.integer  "settler"
-    t.integer  "water"
-    t.integer  "food"
-    t.integer  "power"
-    t.integer  "defense"
+    t.integer  "settler",    default: 0
+    t.integer  "water",      default: 0
+    t.integer  "food",       default: 0
+    t.integer  "power",      default: 0
+    t.integer  "defense",    default: 0
     t.boolean  "found",      default: false
-    t.boolean  "secure",     default: false
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
   end
