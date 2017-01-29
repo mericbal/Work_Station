@@ -14,8 +14,10 @@
 				<td> <%= s.food %> </td>
 				<td> <%= s.power %> </td>
 				<td> <%= s.defense %> </td>
-				<td id="founded" > <% if s.found? then %> <img src="f-up2.jpg" width="75" height="50" name="yes"> <% else %> <img src="thumbs-down.png" width="60" height="50" > <% end %> </td>
-				<td id="secured" > <% if secure?(s) then %> <img src="f-up2.jpg" width="75" height="50" name="yes"> <% else %> <img src="thumbs-down.png" width="70" height="50" > <% end %> </td>
+				<td id="founded" > <% if s.found? then %> <%= image_tag('f-up2.jpg', width: '75', height: '50') %> <% else %> <%= image_tag('thumbs-down.png', width: '60', height: '50') %> <% end %> </td>
+				<td id="secured" > <% if secure?(s) then %> <%= image_tag('f-up2.jpg', width: '75', height: '50') %> <% else %> <%= image_tag('thumbs-down.png', width: '70', height: '50') %> <% end %> </td>
 	</tr>
 			<% end %>
 </table>
+
+
