@@ -1,5 +1,5 @@
 <h1> magazines </h1>
 
 <% @magazines.each do |m| %>
-	<li>	<a class='mag' href="/magazines/<%= m.id %>"> <%= m.name %> </a> </li>
+	<li> <%= link_to "#{m.name}", "/magazines/#{m.id}", { :class => 'mag' } %> </li>
 <% end %>
