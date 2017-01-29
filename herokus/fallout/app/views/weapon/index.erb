@@ -18,9 +18,9 @@
 
 			<td> # <%= w.game_id %> </td>
 			<td> <% if w.modified? %>
-						<img src="f-up2.jpg" width="75" height="50" name="yes" >
+						<%= image_tag('f-up2.jpg', width: '75', height: '50') %>
 						<% else %>
-						<img src="f-down.jpg" width="70" height="50" >
+						<%= image_tag('thumbs-down.png', width: '60', height: '50') %>
 						<% end %>
 		</tr>
 	<% end %>
