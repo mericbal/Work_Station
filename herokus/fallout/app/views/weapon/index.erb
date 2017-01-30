@@ -17,11 +17,7 @@
 			 -->
 
 			<td> # <%= w.game_id %> </td>
-			<td> <% if w.modified? %>
-						<%= image_tag('f-up2.jpg', width: '75', height: '50') %>
-						<% else %>
-						<%= image_tag('thumbs-down.png', width: '60', height: '50') %>
-						<% end %>
+			<td> <% if w.modified? then %> <%= image_tag('f-up2.jpg', width: '75', height: '50') %> <% else %> <%= image_tag('thumbs-down.png', width: '60', height: '50') %> <% end %> </td>
 		</tr>
 	<% end %>
 

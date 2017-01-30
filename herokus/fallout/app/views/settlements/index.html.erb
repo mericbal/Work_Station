@@ -1,0 +1,38 @@
+<h2> settlements </h2>
+
+<% current_user = nil %>
+<% if current_user != nil %>
+
+	<table>
+		<tr>
+			<% a = %w( name settlers water food power defense found? secure? ) %>
+				<% a.each do |h| %>
+					<th><h3> <%= h %> </h3></th>
+				<% end %>
+		</tr>
+		<tr> <% @settlements.each do |s| %>
+					<td> <%= s.name %> </td>
+					<td> <%= link_to '-1', s_downvote_settlement_path(s), method: :post %> ~ <%= s.settler %> ~ <%= link_to '+1',s_upvote_settlement_path(s), method: :post %> </td>
+					<td> <%= link_to '-1', w_downvote_settlement_path(s), method: :post %> ~ <%= s.water %> ~ <%= link_to '+1', w_upvote_settlement_path(s), method: :post %> </td>
+					<td> <%= link_to '-1', f_downvote_settlement_path(s), method: :post %> ~ <%= s.food %> ~ <%= link_to '+1', f_upvote_settlement_path(s), method: :post %> </td>
+					<td> <%= link_to '-1', p_downvote_settlement_path(s), method: :post %> ~ <%= s.power %> ~ <%= link_to '+1', p_upvote_settlement_path(s), method: :post %> </td>
+					<td> <%= link_to '-1', d_downvote_settlement_path(s), method: :post %> ~ <%= s.defense %>  ~ <%= link_to '+1', d_upvote_settlement_path(s), method: :post %> </td>
+					<td id="founded" > <% if s.found? then %> <%= image_tag('f-up2.jpg', width: '75', height: '50') %> <% else %> <%= image_tag('thumbs-down.png', width: '60', height: '50') %> <% end %> </td>
+					<td id="secured" > <% if secure?(s) then %> <%= image_tag('f-up2.jpg', width: '75', height: '50') %> <% else %> <%= image_tag('thumbs-down.png', width: '60', height: '50') %> <% end %> </td>
+		</tr>
+				<% end %>
+	</table>
+
+	<% else %>
+
+	<table>
+		<tr> <th> name </th> </tr>
+		<tr> 	<% @settlements.each do |s| %>
+						<td> <%= s.name %> </td>
+		</tr>
+				 	<% end %>
+
+<% end %>
+
+
+

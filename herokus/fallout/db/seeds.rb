@@ -579,7 +579,7 @@ weathers.each do |ty, num|
 	Weather.create(name: ty, number: num)
 end
 
-Perk.destroy
+# Perk.all.destroy
 perks = [
 	{ 
 		:name => 'IRON FIST', 

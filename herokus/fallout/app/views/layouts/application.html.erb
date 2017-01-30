@@ -31,7 +31,7 @@
 		  <li id='trailers'	class="t-menu">
         <%= link_to 'trailers', '#', { :class => 'links', :class => 't-button' } %>
 		  	<div class="t-menu-content">
-          <%= link_to 'war never changes', 'https://www.youtube.com/watch?v=P8kcjyW0scI', { :class => 'links', :target => '_blank'} %>
+          <%= link_to 'war never changes', 'https://www.youtube.com/watch?v=P8kcjyW0scI', class: 'links', target: '_blank' %>
           <%= link_to 'launch trailer', 'https://www.youtube.com/watch?v=X5aJfebzkrM', { :class => 'links', :target => '_blank'} %>
           <%= link_to 'official trailer', 'https://www.youtube.com/watch?v=GE2BkLqMef4', { :class => 'links', :target => '_blank'} %>
           <%= link_to 'wanderer trailer', 'https://www.youtube.com/watch?v=k3IlHBBGCIw', { :class => 'links', :target => '_blank'} %>
@@ -39,45 +39,27 @@
   		</li>
 
     </ul>
-  <div id='header'> tap here to <b> sign up </b> or <b> sign in </b> </div>
+  <div id='header'> tap here to <b> sign up </b> / <b> sign in </b> </div>
 
   <div id='slide'>
-  <div id='form-signup'>
-  <h3> sign up </h3>
-  <%= form_tag do %>
-  <p>
-  <%= label_tag 'username   ' %>
-  <%= text_field_tag :username %>
-  </p>
-
-  <p>
-  <%= label_tag 'e-mail   ' %>    
-  <%= text_field_tag :email %>
-  </p>
-
-  <p>
-  <%= label_tag 'password   ' %>
-  <%= password_field_tag :password %>    
-  </p>
-  <%= submit_tag 'sign me up' %>
-  <% end %>
-  </div>
 
   <div id="form-login">
   <h3>login</h3>
   <%= form_tag do %>
   <p>
-  <%= label_tag 'username   ' %>
+  <%= label_tag 'username :' %>
   <%= text_field_tag :username %>
   </p>
 
   <p>
-  <%= label_tag 'password   ' %>
+  <%= label_tag 'password :' %>
   <%= password_field_tag :password %>    
   </p>
   <%= submit_tag 'log me in' %>
   <% end %>
   </div> <!-- form login -->
+
+  <p> New user ?<%= button_to 'sign up', new_user_path, method: :get %> </p>
     
   </div>
   
