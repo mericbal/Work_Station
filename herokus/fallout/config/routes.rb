@@ -9,6 +9,8 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :users, only: [ :index, :new, :create ]
+
   # resources :settler, :food, :water, :power, :defense, only: [:upvote, :downvote] do
   #   member do 
   #     post 'upvote', 'downvote'
