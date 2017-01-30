@@ -1,4 +1,4 @@
-class SettlementController < ApplicationController
+class SettlementsController < ApplicationController
 
 	include SettlementHelper
 
