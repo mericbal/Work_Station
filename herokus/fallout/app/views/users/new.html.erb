@@ -1,24 +1,35 @@
 <h2> register as a new user </h2>
 
+<% if @errors %>
+  <% @errors.each do |e| %>
+   <p> <li id='errors'> <%= e %> </li> </p>
+  <% end %>
+<% end %>
+
 <div id='form-signup'>
 
   <h3> sign up </h3>
-  <%= form_tag do %>
+  <%= form_for @user do |f| %>
   <p>
-  <%= label_tag 'username :' %>
-  <%= text_field_tag :username %>
+  <%= f.label 'username :' %>
+  <%= f.text_field :username %>
   </p>
 
   <p>
-  <%= label_tag 'e-mail :' %>    
-  <%= text_field_tag :email %>
+  <%= f.label 'e-mail :' %>    
+  <%= f.text_field :email %>
   </p>
 
   <p>
-  <%= label_tag 'password :' %>
-  <%= password_field_tag :password %>
+  <%= f.label 'password :' %>
+  <%= f.password_field :password %>
   </p>
-  <%= submit_tag 'sign me up' %>
+
+  <p>
+  <%= f.label 'password confirmation :' %>
+  <%= f.password_field :password_confirmation %>
+  </p>
+  <%= f.submit 'sign me up' %>
   <% end %>
 
 </div>

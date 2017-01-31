@@ -1,7 +1,7 @@
 <h2> settlements </h2>
 
-<% current_user = nil %>
-<% if current_user != nil %>
+<% current_user == 'meric' %>
+<% if current_user == nil %>
 
 	<table>
 		<tr>
@@ -26,7 +26,7 @@
 	<% else %>
 
 	<table>
-		<tr> <th> name </th> </tr>
+		<tr> <th><h3> name </h3></th> </tr>
 		<tr> 	<% @settlements.each do |s| %>
 						<td> <%= s.name %> </td>
 		</tr>
