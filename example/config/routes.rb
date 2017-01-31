@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+	get '/' => 'apps#index'
+
+	resources :users, only: [:index, :new, :create, :show, :edit, :update]
+	resources :sessions, only: [:new, :create, :destroy]
+
 end

@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-	has_Secure_password
+	has_secure_password
 
 	has_many :posts
 	has_many :comments
