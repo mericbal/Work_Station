@@ -10,7 +10,7 @@
 
   <% if current_user  %>
   	<div id="user-info">
-  	<%= link_to "welcome #{current_user.username} , profile", user_path(current_user.id) %>
+  		<%= link_to "welcome #{current_user.username} , profile", user_path(current_user.id) %>
   	</div>
   <% end %>
 
