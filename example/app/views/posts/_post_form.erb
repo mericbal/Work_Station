@@ -1,0 +1,11 @@
+<div id="form-post">
+	<%= form_for [current_user, @post] do |f| %>
+		<%= f.label :title %>
+		<%= f.text_field :title %>
+
+		<%= f.label :body %>
+		<%= f.text_area :body %>
+
+		<%= f.submit %>
+	<% end %>
+</div>

@@ -5,3 +5,18 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+User.create(username: 'aa', email: 'aa', password: 'aa')
+User.create(username: 'bb', email: 'bb', password: 'bb')
+
+
+5.times do
+	Post.create(title: Faker::Lorem.word, body: Faker::Lorem.sentence, user_id: '1')
+end
+
+5.times do
+	Post.create(title: Faker::Lorem.word, body: Faker::Lorem.sentence, user_id: '2')
+end
+
+
+puts 'Seed complete !'

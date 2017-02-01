@@ -1,12 +1,23 @@
-<div class="posts">
 	<h3> all posts </h3>
+
+<div class="posts">
 	<% @posts.each do |p| %>
-		<p>
-			<span> <%= p.title %> </span>
-			<span> <%= p.body %></span>
+		<ul>
+			<li>
+			<span> Title : <%= link_to "#{p.title}", post_path(p) %> </span>
+			<span>Body: <%= p.body %></span>
+			</li>
+		</ul>
 		</p>
 	<% end %>
 </div>
 
 
-
+<% if current_user  %>
+	<%= link_to 'new post ?', new_user_post_path(current_user) %>
+	<% else %>
+	<h3> you need to sign up or log in to create posts </h3>
+	<%= link_to 'new user', new_user_path %>
+	<br>
+	<%= link_to 'login', new_session_path %>
+<% end %>
