@@ -19,4 +19,14 @@ end
 end
 
 
+array=[1,2,3]
+array.each { |n| Comment.create(body: Faker::Lorem.sentesnce, user_id: 1, post_id: n) }
+
+# 5.times do
+Comment.create(body: Faker::Lorem.sentence, user_id: 1, post_id: 4)
+# end
+
+
+
+
 puts 'Seed complete !'

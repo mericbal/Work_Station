@@ -1,9 +1,9 @@
-<h2> your own posts </h2>
+<h2> all posts </h2>
 
 <% if current_user  %>
 	<%= link_to 'new post ?', new_user_post_path(current_user) %>
 	<br>
-	<%= link_to 'all posts', '/all_posts' %>
+	<%= link_to 'your posts', user_posts_path(current_user) %>
 	<% else %>
 	<h3> you need to sign up or log in to create posts </h3>
 	<%= link_to 'new user', new_user_path %>
@@ -20,6 +20,7 @@
 			<span> Body: <%= p.body %></span>
 			<% if current_user && p.user_id == current_user.id %>
 				<span> <%= link_to 'edit this post', edit_post_path(p) %> </span>
+				<span> || </span>
 				<span> <%= link_to 'delete', post_path(p), method: :delete, data: {confirm:'sure ?'} %> </span>
 			<% end %>
 			</li>

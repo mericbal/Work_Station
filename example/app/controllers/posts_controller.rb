@@ -2,8 +2,13 @@ class PostsController < ApplicationController
 
 	include SessionsHelper
 
-	def index
+	def all
 		@posts = Post.all
+		render :all
+	end
+
+	def index
+		@posts = Post.where(user_id: current_user)
 	end
 
 	def new
@@ -18,7 +23,7 @@ class PostsController < ApplicationController
 		@post = Post.new(post_params)
 		@post.user_id = current_user.id
 		if @post.save 
-			redirect_to posts_path
+			redirect_to user_posts_path(@post)
 		else
 			render :new
 		end
@@ -42,7 +47,7 @@ class PostsController < ApplicationController
 	def destroy
 		@post = Post.find(params[:id])
 		@post.destroy
-		redirect_to posts_path
+		redirect_to user_posts_path(@post)
 	end
 
 	private

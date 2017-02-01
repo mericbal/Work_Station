@@ -11,6 +11,8 @@
   <% if current_user  %>
   	<div id="user-info">
   		<%= link_to "welcome #{current_user.username} , profile", user_path(current_user.id) %>
+  		<br>
+			<%= link_to 'logout', session_path(current_user), method: :delete, data: { confirm: 'sure ? '} %>
   	</div>
   <% end %>
 
