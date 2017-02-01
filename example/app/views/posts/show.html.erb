@@ -1,0 +1,10 @@
+<h3> post id ==> <%= @post.id %> </h3>
+
+<h2> post title </h2>
+<h4> <%= @post.title  %></h4>
+
+<h2> post body </h2>
+<h4> <%= @post.body  %></h4>
+
+<h2> this post is created by </h2>
+<h4> User ==> <%= User.find(@post.user_id).username %></h4>
