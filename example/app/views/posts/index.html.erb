@@ -15,6 +15,7 @@
 		<ol>
 	<% @posts.each do |p| %>
 			<li>
+			<span> <%= link_to p.comments.count, post_comments_path(p) %> </span>
 			<span> Comments : <%= p.comments.count %> </span>
 			<span> Title : <%= link_to "#{p.title}", post_path(p) %> </span>
 			<span> Body: <%= p.body %></span>

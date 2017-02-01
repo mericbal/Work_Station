@@ -1,7 +1,7 @@
 class CommentsController < ApplicationController
 
 	def index
-		@comments = Comment.all
+		@comments = Comment.where(post_id: params[:id])
 	end
 
 	def new
@@ -15,6 +15,11 @@ class CommentsController < ApplicationController
 		else
 			render :new
 		end
+	end
+
+	def destroy
+		@comment.destroy
+		redirect_to '/all_posts'
 	end
 
 	private
