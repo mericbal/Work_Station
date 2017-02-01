@@ -5,7 +5,11 @@
 		<ul>
 			<li>
 			<span> Title : <%= link_to "#{p.title}", post_path(p) %> </span>
-			<span>Body: <%= p.body %></span>
+			<span> Body: <%= p.body %></span>
+			<% if current_user && p.user_id == current_user.id %>
+				<span> <%= link_to 'edit this post', edit_post_path(p) %> </span>
+				<span> <%= link_to 'delete', post_path(p), method: :delete, data: {confirm:'sure ?'} %> </span>
+			<% end %>
 			</li>
 		</ul>
 		</p>
