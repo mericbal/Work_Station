@@ -5,7 +5,7 @@
 
 	<table>
 		<tr>
-			<% a = %w( name settlers water food power defense found? secure? ) %>
+			<% a = %w( name settlers water food power defense found? secure? test ) %>
 				<% a.each do |h| %>
 					<th><h3> <%= h %> </h3></th>
 				<% end %>
@@ -19,6 +19,7 @@
 					<td> <%= link_to '-1', d_downvote_settlement_path(s), method: :post %> ~ <%= s.defense %>  ~ <%= link_to '+1', d_upvote_settlement_path(s), method: :post %> </td>
 					<td id="founded" > <% if s.found? then %> <%= image_tag('f-up2.jpg', width: '75', height: '50') %> <% else %> <%= image_tag('thumbs-down.png', width: '60', height: '50') %> <% end %> </td>
 					<td id="secured" > <% if secure?(s) then %> <%= image_tag('f-up2.jpg', width: '75', height: '50') %> <% else %> <%= image_tag('thumbs-down.png', width: '60', height: '50') %> <% end %> </td>
+					<td> <%= s.settlers.count %> <%= link_to '+1', settlement_settlers_path(s), method: :post %> </td>
 		</tr>
 				<% end %>
 	</table>

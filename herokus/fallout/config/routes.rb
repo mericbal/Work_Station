@@ -12,6 +12,9 @@ Rails.application.routes.draw do
   resources :users#, only: [ :index, :new, :create ]
   resources :sessions, only: [:new, :create, :destroy]
   
+  resources :settlements do
+    resources :settlers, only: [:index, :create, :destroy]
+  end
 
   # resources :settler, :food, :water, :power, :defense, only: [:upvote, :downvote] do
   #   member do 
@@ -19,7 +22,7 @@ Rails.application.routes.draw do
   #   end
   # end
 
-
+  get 'up' => 'settlers#up'
   get '/' => 'app#index'
 
   get '/weapons' => 'weapon#index'
