@@ -72,13 +72,25 @@ else :
 
 
 
-if age < 16
+if age < 16 :
 	print('can not drive')
-elif age <= 21
+elif age <= 21 :
 	print('can drive but can not drink')
 else :
 	print('can drink and drive :) ')
+
+
+if ((age >= 16) and (age < 21 )) :
+	print('can drive but cannot drink')
+
+
 	
+# loops
+
+for x in range(0, 10) : 
+	print(x, 'heloooo')
+
+# print('\n')
 
 
 
@@ -98,4 +110,6 @@ else :
 
 
 
-# MçB
+
+
+# MB
