@@ -1,26 +1,26 @@
-import logging
+# import logging
 
-from random import randint
+# from random import randint
 
-from flask import Flask, render_template
+# from flask import Flask, render_template
 
-from flask_ask import Ask, statement, question, session
-
-
-app = Flask(__name__)
-
-ask = Ask(app, "/")
-
-logging.getLogger("flask_ask").setLevel(logging.DEBUG)
+# from flask_ask import Ask, statement, question, session
 
 
-@ask.launch
+# app = Flask(__name__)
 
-def new_game():
+# ask = Ask(app, "/")
 
-    welcome_msg = render_template('welcome')
+# logging.getLogger("flask_ask").setLevel(logging.DEBUG)
 
-    return question(welcome_msg)
+
+# @ask.launch
+
+# def new_game():
+
+#     welcome_msg = render_template('welcome')
+
+#     return question(welcome_msg)
 
 
 @ask.intent("YesIntent")
