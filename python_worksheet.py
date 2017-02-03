@@ -1,3 +1,6 @@
+import random
+import sys
+
 print('hello meric')
 
 # Here are some basic argument specifiers you should know:
@@ -92,21 +95,78 @@ for x in range(0, 10) :
 
 # print('\n')
 
+letters = ['a', 'b', 'c', 'd']
+
+for y in letters :
+	print(y)
+
+
+### 
+
+random_numbers = random.randrange(0, 10) # to user `random` function we have to import at the top
+
+while(random_numbers != 7) :
+	print(random_numbers)
+	random_numbers = random.randrange(0, 10)
+
+##
+
+i = 0;
+
+while(i <= 7):
+	print(i)
+	i += 1
+
+
+
+#### functions
+
+def sumNums(x,y):
+	total = x + y
+	return total
+
+
+
+print(sumNums(25,5))
 
 
 
 
+### 
 
 
+print('your name ?')
+name = sys.stdin.readline()
+print('hello', name)
 
 
+'meric'.capitalize()
+'meric'.split(' ')
 
 
+###
+
+# basically creates a file and put some text in it 
+
+# file = open('text.txt', 'wb') #'wb is for write to the file' ########## 'ab+' to read and append
+# print(file.mode)
+# print(file.name)
+
+# file.write(bytes('Write me \n'))
+
+# file.close()
 
 
+file = open('xxx.yaml', 'wb')
+file.write(bytes('xxx'))
+file.close()
 
 
+# to read the file we have 
+file = open('text.txt', 'r+')
+print(file.read())
 
+# os.remove('text.txt') # to remove the file 
 
 
 
