@@ -1,5 +1,5 @@
 {
-    "intents": [{ "intent": "YesIntent" }, 
+    	"intents": [{ "intent": "YesIntent" }, 
                 { "intent": "FirstAnswerIntent", "slots": [
                     {   "name": "first",
                         "type": "AMAZON.NUMBER" },
@@ -11,13 +11,23 @@
 
 # or the other way come back later 
 
+# option 2
+# {
+# 	'intents':[ { 'intent': 'YesIntent' },
+# 							{	'intent': 'FirstAnswerIntent' },
+# 							{	'intent': 'SecondAnswerIntent'},
+# 							{ 'intent': 'NoIntent'}
+# 						]
+# }
+
 
 ############################
 
 Copy the utterances below into the "Sample Utterances" field.
 
 
-NoIntent no 
+NoIntent no
+NoIntent nope
 
 YesIntent yes
 YesIntent ready
@@ -32,5 +42,4 @@ SecondAnswerIntent {second}
 
 
 
-
-
+#MB

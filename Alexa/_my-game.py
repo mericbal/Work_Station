@@ -1,18 +1,12 @@
 import logging
-
 from random import randint
-
 from flask import Flask, render_template
-
 from flask_ask import Ask, statement, question, session
 
 
 app = Flask(__name__)
-
 ask = Ask(app, "/")
-
 logging.getLogger("flask_ask").setLevel(logging.DEBUG)
-
 
 @ask.launch
 
@@ -25,15 +19,20 @@ def new_game() :
 @ask.intent("YesIntent")
 
 def round() :
-	# number1 = randint(0, 9) # come back later
-	# number2 = randint(0, 9) # come back later
-
+	# option 1
 	numbers = [ randint(0,9) for _ in range(2)]
 	round_msg = render_template('question', numbers=numbers)
 	session.attributes['total'] = numbers[0] + numbers[1]
 	return question(round_msg)
 
-@ask.intent('AnswerIntent', convert={'first': int})
+	# option 2
+	# number1 = randint(0, 9) # come back later
+	# number2 = randint(0, 9) # come back later
+	# round_msg = render_template('question', number1=number1, number2=number2)
+	# session.attributes['total'] = number1 + number2
+	# return question(round_msg)
+
+@ask.intent('FirstAnswerIntent', convert={'first': int})
 
 def answer(first) :
 	correct = session.attributes['total']
@@ -43,7 +42,7 @@ def answer(first) :
 	else :
 		reply = render_template('wrong')
 
-@ask.intent('AnswerIntent', convert={'second': int})
+	@ask.intent('SecondAnswerIntent', convert={'second': int})
 	
 	if [second] == correct:
 		reply = render_template('win')
@@ -56,8 +55,7 @@ def answer(first) :
 
 
 if __name__ == '__main__':
-
-    app.run(debug=True)
+	app.run(debug=True)
 
 
 
