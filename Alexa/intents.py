@@ -31,13 +31,6 @@
     }]
 
 }
-
-
-
-
-
-
-
 Copy the utterances below into the "Sample Utterances" field.
 
 YesIntent yes

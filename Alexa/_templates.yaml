@@ -1,7 +1,9 @@
 new_game: Hello come towards the light group members. I have some math questions for you. Should we start ?
 
-question: can you add
+question:  what is {{ numbers[0] }} plus {{ numbers[1] }} ?
 
-win: Nice work guys.
+win: Nice work buddy.
 
-wrong: Sorry idiot. Come back later.
+wrong: Sorry man. Do you want to try again ?
+
+over: Come on man. Are you an idiot ?
