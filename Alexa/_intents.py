@@ -9,6 +9,9 @@
                 }]
 }
 
+{ 'intents': [{ 'intent': 'YesIntent'},
+							{ 'intent': 'FirstAnswerIntent', 'slots': [ { 'name': 'first', 'type': 'AMAZON.NUMBER' }]}]}
+
 # or the other way come back later 
 
 # option 2

@@ -1,58 +1,64 @@
-# import logging
+import logging
+from random import randint
+from flask import Flask, render_template
+from flask_ask import Ask, statement, question, session
 
-# from random import randint
+app = Flask(__name__)
+ask = Ask(app, "/")
+logging.getLogger("flask_ask").setLevel(logging.DEBUG)
 
-# from flask import Flask, render_template
+@ask.launch
 
-# from flask_ask import Ask, statement, question, session
+def new_game() :
+  new_game_msg = render_template('new_game')
+  return question(new_game_msg)
 
-
-# app = Flask(__name__)
-
-# ask = Ask(app, "/")
-
-# logging.getLogger("flask_ask").setLevel(logging.DEBUG)
-
-
-# @ask.launch
-
-# def new_game():
-
-#     welcome_msg = render_template('welcome')
-
-#     return question(welcome_msg)
+@ask.intent('NoIntent') #come back later
 
 
-# @ask.intent("YesIntent")
+@ask.intent("YesIntent")
 
-# def next_round():
+def round() :
+  # option 1
+  numbers = [ randint(0,9) for _ in range(2)]
+  round_msg = render_template('question', nums=numbers)
+  session.attributes['total'] = numbers[0] + numbers[1]
+  return question(round_msg)
 
-#     numbers = [randint(0, 9) for _ in range(3)]
+ # option 2
+  # number1 = randint(0, 9) # come back later
+  # number2 = randint(0, 9) # come back later
+  # round_msg = render_template('question', number1=number1, number2=number2)
+  # session.attributes['total'] = number1 + number2
+  # return question(round_msg)
 
-#     round_msg = render_template('round', numbers=numbers)
+@ask.intent('FirstAnswerIntent', convert={'first': int})
 
-#     session.attributes['numbers'] = numbers[::-1]  # reverse
+def answer(first) :
+  correct = session.attributes['total']
+  if first == correct:
+    reply = render_template('win')
+  else :
+    reply = render_template('over')
 
-#     return question(round_msg)
-
-
-# @ask.intent("AnswerIntent", convert={'first': int, 'second': int, 'third': int})
-
-# def answer(first, second, third):
-
-#     winning_numbers = session.attributes['numbers']
-
-#     if [first, second, third] == winning_numbers:
-
-#         msg = render_template('win')
-
-#     else:
-
-#         msg = render_template('lose')
-
-#     return statement(msg)
+  return statement(reply)
 
 
-# if __name__ == '__main__':
+# @ask.intent('SecondAnswerIntent', convert={'second': int})
+#
+# def second_answer(second):
+  # correct = session.attributes['total']
+#   if [second] == correct:
+#     reply = render_template('win')
+#   else :
+#     reply = render_template('over')
+#
+  # return statement(reply)
 
-#     app.run(debug=True)
+
+
+if __name__ == '__main__':
+  app.run(debug=True)
+
+
+# MB
