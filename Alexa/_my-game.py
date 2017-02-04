@@ -21,7 +21,7 @@ def new_game() :
 def round() :
 	# option 1
 	numbers = [ randint(0,9) for _ in range(2)]
-	round_msg = render_template('question', numbers=numbers)
+	round_msg = render_template('question', nums=numbers)
 	session.attributes['total'] = numbers[0] + numbers[1]
 	return question(round_msg)
 
@@ -37,19 +37,19 @@ def round() :
 def answer(first) :
 	correct = session.attributes['total']
 
-	if [first] == correct:
-		reply = render_template('win')
-	else :
-		reply = render_template('wrong')
-
-	@ask.intent('SecondAnswerIntent', convert={'second': int})
-	
-	if [second] == correct:
+	if first == correct:
 		reply = render_template('win')
 	else :
 		reply = render_template('over')
 
-	return statement(reply)
+	# @ask.intent('SecondAnswerIntent', convert={'second': int})
+	
+	# if [second] == correct:
+	# 	reply = render_template('win')
+	# else :
+	# 	reply = render_template('over')
+
+	# return statement(reply)
 
 
 

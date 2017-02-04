@@ -1,7 +1,25 @@
-welcome: Welcome to memory game. I'm going to say three numbers for you to repeat backwards. Ready?
+new_game: Hey Pablo, lets play a game. I have some math questions for you. Should we start ?
 
-round: Can you repeat the numbers {{ numbers|join(", ") }} backwards?
+question: Alright lets start, what is {{ nums[0] }} plus {{ nums[1] }} ?
 
-win: Good job!
+win: Nice work buddy.
 
-lose: Sorry, that's the wrong answer.
+wrong: Sorry man. Do you want to try again ?
+
+over: Come on man. Are you an idiot ?
+
+noanswer: Okay buddy. Let me know when you are ready.
+
+smoke: Should we go for a smoke ?
+
+lets: Alright , lets go. 
+
+# def new_game() :
+#     smoke = render_template('smoke')
+#     return question(smoke)
+
+# @ask.intent("YesIntent")
+
+# def lets_go() :
+#     lets = render_template('lets')
+#     return question(lets)
