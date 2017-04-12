@@ -23,3 +23,17 @@ end
 # p single_numbers([1,2,3,4,5,1])
 
 
+
+
+# add 2 digits on every single number 
+# f ex 97 = 9 + 7 = 16 --> 1 + 6 = 7 return 7 
+
+def digits(num)
+	arr = num.to_s.split('').each { |n| n }
+	total = 0
+	unless arr.length == 1
+		arr.each { |n| }
+	end 
+end
+
+p digits(12345)
