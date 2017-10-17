@@ -77,7 +77,24 @@ def calp
 	plate.join
 end
 
-p calp()
+# p calp()
+
+
+
+# QQ 6 
+# disvowel the input
+# 'This is fucking awesome!' => 'Ths s fckng wsm!'
+
+def devowel input
+	input.chars.reject { |c| c.downcase =~ /[aeiou]/ }.join
+end
+
+# p devowel 'This is fUcking awesome!'
+
+
+
+
+
 
 
 
