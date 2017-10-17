@@ -40,9 +40,15 @@ end
 
 def remove_chars input
 	array = []
-	input.chars.each { |c| if !array.include?(c) then array << c end }
+	# input.chars.each { |c| if !array.include?(c) then array << c end }
+	input.chars.each { |c| array.include?(c) ? next : array << c }
 	array.join
 end
 
 # p remove_chars 'aaabbbcccddde'
 # p remove_chars 'merici'
+
+
+
+
+
