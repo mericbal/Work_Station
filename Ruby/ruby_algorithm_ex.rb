@@ -50,5 +50,24 @@ end
 
 
 
+# QQ 4 
+# counting the letters and creating a hash
+# 'aaaabbbccd' => a=4 b=3 c=2 d=1
+
+def letter_counter input
+	hash = {}
+	input.chars.each_with_index { |c,i| hash[c] = input.count(input[i]) }
+	hash
+end
+
+# p letter_counter 'aaabbc'
+# p letter_counter 'aaabbbcccdddaaabbb'
 
 
+
+
+
+
+
+
+#
