@@ -94,11 +94,19 @@ end
 
 
 
+# QQ 7
+# mask the characters except the last 4
+
+def mask input
+	masked = []
+	input.length <= 4 ? input : (input.length-4).times { masked << '#' }
+	(masked + input.chars.last(4)).join
+end
+
+# p mask '123'
+# p mask '1234'
+# p mask '12345'
+# p mask '1231231232134444'
 
 
 
-
-
-
-
-#
