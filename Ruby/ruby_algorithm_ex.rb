@@ -65,6 +65,37 @@ end
 
 
 
+# QQ 5
+# create a random CA license Plate '7FGU756' '5ABC123'
+
+def calp
+	letters = %w(a b c d e f g h)
+	plate = []
+	plate.push(rand(1..9))
+	3.times { |x| plate.push(letters.sample.upcase) }
+	3.times	{ |x| plate.push(rand(0..9)) }
+	plate.join
+end
+
+# p calp()
+
+
+
+# QQ 6 
+# disvowel the input
+# 'This is fucking awesome!' => 'Ths s fckng wsm!'
+
+def devowel input
+	input.chars.reject { |c| c.downcase =~ /[aeiou]/ }.join
+end
+
+# p devowel 'This is fUcking awesome!'
+
+
+
+
+
+
 
 
 
