@@ -1,4 +1,4 @@
-# Q1 
+# QQ 1 
 # reverse the string 
 
 def rev_str input
@@ -11,7 +11,7 @@ end
 
 
 
-# Q2
+# QQ 2
 # Palindrome
 # tacocat == tacocat => true
 # asd => false
@@ -32,3 +32,17 @@ end
 # p palindrome 'tacocat'
 # p palindrome 'merici'
 
+
+
+# QQ 3 
+# remove repeating chars 
+# aaaabbbbcccd == abcd
+
+def remove_chars input
+	array = []
+	input.chars.each { |c| if !array.include?(c) then array << c end }
+	array.join
+end
+
+# p remove_chars 'aaabbbcccddde'
+# p remove_chars 'merici'
