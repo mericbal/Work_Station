@@ -194,9 +194,17 @@ end
 
 
 
+# QQ 13 
+# remove the chars greater than 'm' and calculate how many
+# 'aaabbbxx' => 2 
+
+def printer_error(input)
+  input.chars.select { |x| x > 'm' }.length.to_s + '/' + input.length.to_s
+end
 
 
-
+p printer_error 'aaabbbccc'
+p printer_error 'aaabbbcccxxx'
 
 
 
