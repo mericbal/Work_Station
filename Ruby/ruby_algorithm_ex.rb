@@ -168,12 +168,37 @@ def filter_integer input
   # arr = []
   # input.each { |x| x.class == Fixnum ? arr.push(x) : next }
   # arr
-  
+
   # or # input.grep Fixnum
   # or # input.reject { |x| x.is_a? String }
   # or # input.select { |x| x.class == Fixnum }
 end
 
-a = [1,2,3,'a','b','c']
-p filter_integer a
+# a = [1,2,3,'a','b','c']
+# p filter_integer a
 
+
+
+
+# QQ 12
+# find the length of shortest word or words
+
+def shortest_length input
+	input.split(' ').min_by { |x| x.length }.length
+  # or # input.split(" ").sort_by! { |x| x.length }.first.length
+	# or # input.split.map(&:size).min
+end 
+
+# p shortest_length 'hello my name is meriç'
+
+
+
+
+
+
+
+
+
+
+
+#
