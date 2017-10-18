@@ -1,3 +1,5 @@
+require 'prime'
+
 # QQ 1 
 # reverse the string 
 
@@ -116,7 +118,9 @@ end
 def divisors(n)
   nums = []
   n.downto(2) { |i| n%i == 0 && n != i ? nums.unshift(i) : next }
-  nums.length <= 1 ? "#{n} is prime" : nums
+	# or # 2.upto(n) { |i| n%i == 0 && n != i ? nums.push(i) : next }
+  n.prime? ? "#{n} is prime" : nums   # 'prime' needs to be required 
+  # or # nums.empty? ? "#{n} is prime" : nums
 end
 
 # p divisors 96
