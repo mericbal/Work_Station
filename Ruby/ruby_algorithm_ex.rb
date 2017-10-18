@@ -117,7 +117,7 @@ end
 
 def divisors(n)
   nums = []
-  n.downto(2) { |i| n%i == 0 && n != i ? nums.unshift(i) : next }
+  (n/2).downto(2) { |i| n%i == 0 && n != i ? nums.unshift(i) : next }
 	# or # 2.upto(n) { |i| n%i == 0 && n != i ? nums.push(i) : next }
   n.prime? ? "#{n} is prime" : nums   # 'prime' needs to be required 
   # or # nums.empty? ? "#{n} is prime" : nums
@@ -127,3 +127,20 @@ end
 # p divisors 15
 # p divisors 183
 # p divisors 13
+
+
+
+
+# QQ 9
+# Remove the repeatitive chars
+# 'AAABBCCAAABB' => 'ABCAB'
+
+def unique_order input
+	arr =[]
+	input.chars.each { |c| arr.empty? || arr.last != c ? arr.push(c) : next }
+	arr
+end
+
+p unique_order 'MMMEEERRRIIICCCCCC'
+p unique_order '111223333344455'
+
