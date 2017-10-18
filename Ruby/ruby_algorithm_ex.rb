@@ -141,6 +141,18 @@ def unique_order input
 	arr
 end
 
-p unique_order 'MMMEEERRRIIICCCCCC'
-p unique_order '111223333344455'
+# p unique_order 'MMMEEERRRIIICCCCCC'
+# p unique_order '111223333344455'
 
+
+
+
+# QQ 10
+# return the count of vowels in the input
+
+def vow_counter input
+	input.count 'aeuio'
+end
+
+p vow_counter 'Galatasaray'
+p vow_counter 'Meric'
