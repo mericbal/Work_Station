@@ -216,6 +216,7 @@ end
 
 def find_missing_letter input
 	input.each_with_index { |l,i| if input[i+1] != l.next then return l.next else next end }
+	# or # ((input.first..input.last).to_a - input).first
 end
 
 # p find_missing_letter ['a','b','c','d','f']
