@@ -110,3 +110,16 @@ end
 
 
 
+# QQ 8
+# find the dividers
+
+def divisors(n)
+  nums = []
+  n.downto(2) { |i| n%i == 0 && n != i ? nums.unshift(i) : next }
+  nums.length <= 1 ? "#{n} is prime" : nums
+end
+
+# p divisors 96
+# p divisors 15
+# p divisors 183
+# p divisors 13
