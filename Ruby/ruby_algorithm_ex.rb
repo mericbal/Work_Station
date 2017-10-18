@@ -194,6 +194,7 @@ end
 
 
 
+
 # QQ 13 
 # remove the chars greater than 'm' and calculate how many
 # 'aaabbbxx' => 2 
@@ -202,9 +203,35 @@ def printer_error(input)
   input.chars.select { |x| x > 'm' }.length.to_s + '/' + input.length.to_s
 end
 
+# p printer_error 'aaabbbccc'
+# p printer_error 'aaabbbcccxxx'
 
-p printer_error 'aaabbbccc'
-p printer_error 'aaabbbcccxxx'
+
+
+
+
+# QQ 14
+# find the missing letter in consecutive array
+# ['a','b','c','d','f'] => 'e'
+
+def find_missing_letter input
+	input.each_with_index { |l,i| if input[i+1] != l.next then return l.next else next end }
+end
+
+# p find_missing_letter ['a','b','c','d','f']
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
