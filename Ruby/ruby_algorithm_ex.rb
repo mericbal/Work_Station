@@ -154,5 +154,26 @@ def vow_counter input
 	input.count 'aeuio'
 end
 
-p vow_counter 'Galatasaray'
-p vow_counter 'Meric'
+# p vow_counter 'Galatasaray'
+# p vow_counter 'Meric'
+
+
+
+
+# QQ 11
+# return the array with only integers in the array
+# [1,2,3,4,'a','b','c'] => [1,2,3]
+
+def filter_integer input
+  # arr = []
+  # input.each { |x| x.class == Fixnum ? arr.push(x) : next }
+  # arr
+  
+  # or # input.grep Fixnum
+  # or # input.reject { |x| x.is_a? String }
+  # or # input.select { |x| x.class == Fixnum }
+end
+
+a = [1,2,3,'a','b','c']
+p filter_integer a
+
