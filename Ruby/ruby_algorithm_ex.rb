@@ -231,11 +231,27 @@ def bit_counter input
 	input.to_s(2).count('1')
 end
 
-p bit_counter 4
-p bit_counter 7
-p bit_counter 9
-p bit_counter 10
+# p bit_counter 4
+# p bit_counter 7
+# p bit_counter 9
+# p bit_counter 10
 
+
+
+
+# QQ 16
+# spin the words which has 5 or more chars
+
+def spinner input
+	# arr = []
+	# input.split().each { |w| w.length >= 5 ? arr.push(w.reverse) : arr.push(w) }
+	# arr.join " " 
+
+	# or # input.split().map { |w| w.length >= 5 ? w.reverse : w }.join " "
+	# or # input.gsub( /\w{5,}/, &:reverse )
+end
+
+# p spinner 'Hello this is my new definition for words spin'
 
 
 
