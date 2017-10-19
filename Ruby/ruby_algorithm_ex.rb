@@ -165,13 +165,16 @@ end
 # [1,2,3,4,'a','b','c'] => [1,2,3]
 
 def filter_integer input
-  # arr = []
-  # input.each { |x| x.class == Fixnum ? arr.push(x) : next }
-  # arr
+  arr = []
+  input.each { |x| x.class == Fixnum ? arr.push(x) : next }
+  arr
 
-  # or # input.grep Fixnum
-  # or # input.reject { |x| x.is_a? String }
-  # or # input.select { |x| x.class == Fixnum }
+  # or 
+  # input.grep Fixnum
+  # or 
+  # input.reject { |x| x.is_a? String }
+  # or 
+  # input.select { |x| x.class == Fixnum }
 end
 
 # a = [1,2,3,'a','b','c']
@@ -185,8 +188,11 @@ end
 
 def shortest_length input
 	input.split(' ').min_by { |x| x.length }.length
-  # or # input.split(" ").sort_by! { |x| x.length }.first.length
-	# or # input.split.map(&:size).min
+  
+  # or 
+  # input.split(" ").sort_by! { |x| x.length }.first.length	
+	# or 
+	# input.split.map(&:size).min
 end 
 
 # p shortest_length 'hello my name is meriç'
@@ -216,7 +222,9 @@ end
 
 def find_missing_letter input
 	input.each_with_index { |l,i| if input[i+1] != l.next then return l.next else next end }
-	# or # ((input.first..input.last).to_a - input).first
+	
+	# or 
+	# ((input.first..input.last).to_a - input).first
 end
 
 # p find_missing_letter ['a','b','c','d','f']
@@ -247,8 +255,10 @@ def spinner input
 	# input.split().each { |w| w.length >= 5 ? arr.push(w.reverse) : arr.push(w) }
 	# arr.join " " 
 
-	# or # input.split().map { |w| w.length >= 5 ? w.reverse : w }.join " "
-	# or # input.gsub( /\w{5,}/, &:reverse )
+	# or
+	# input.split().map { |w| w.length >= 5 ? w.reverse : w }.join " "
+	# or
+	# input.gsub( /\w{5,}/, &:reverse )
 end
 
 # p spinner 'Hello this is my new definition for words spin'
@@ -256,9 +266,22 @@ end
 
 
 
+# QQ 17
+# 
 
+def iq_test(numbers)
+  index = 0
+  evens = numbers.split().select { |x| x.to_i.even? }
+  odds = numbers.split().select { |x| x.to_i.odd? }
+  evens.length > odds.length ? numbers.split().each_with_index { |n,i| n.to_i.odd? ? index = i+1 : next } : numbers.split().each_with_index { |n,i| n.to_i.even? ? index = i+1 : next }
+  index
+	
+	# or
+	# nums = numbers.split.map(&:to_i).map(&:even?)
+	# nums.count(true) > 1 ? nums.index(false) + 1 : nums.index(true) + 1
+end
 
-
-
+# p iq_test '1 3 5 7 9 10'
+# p iq_test '2 4 6 8 10 11 13 15 17 19 21'
 
 #
