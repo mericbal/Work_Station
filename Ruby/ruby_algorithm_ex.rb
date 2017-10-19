@@ -224,9 +224,17 @@ end
 
 
 
+# QQ 15
+# calculate the 1 bits 
 
+def bit_counter input
+	input.to_s(2).count('1')
+end
 
-
+p bit_counter 4
+p bit_counter 7
+p bit_counter 9
+p bit_counter 10
 
 
 
