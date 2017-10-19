@@ -1,4 +1,5 @@
 require 'prime'
+require 'pp'
 
 # QQ 1 
 # reverse the string 
@@ -266,8 +267,9 @@ end
 
 
 
+
 # QQ 17
-# 
+# find the index of odd or even number in an array
 
 def iq_test(numbers)
   index = 0
@@ -283,5 +285,24 @@ end
 
 # p iq_test '1 3 5 7 9 10'
 # p iq_test '2 4 6 8 10 11 13 15 17 19 21'
+
+
+
+
+
+# QQ 18
+# if the string is odd put '_' end of it and gropy by 2 chars in an array
+
+def solution(str)
+  arr = []
+  if str.length.odd? then str += '_' end
+  str.chars.each_slice(2) { |x| arr.push(x.join('')) }
+  arr
+end
+
+# pp solution 'Galatasaray'
+# pp solution 'Galatasara'
+
+
 
 #
