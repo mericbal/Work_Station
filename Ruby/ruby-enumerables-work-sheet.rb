@@ -210,6 +210,7 @@ words.max_by { |x| x.length } # => 'abcdefgh' 	# Returns the longest word
 
 
 nums.min # => 7 		# 7 is the smallest number
+nums.min(2) # => [7,7] 2 7.s are the smallets numbers
 letters.min # => 'a'	# 'a' is the smallest letter
 
 words.min_by { |x| x.length } # => 'ab'		# Returns the shortest
