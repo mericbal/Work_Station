@@ -317,7 +317,34 @@ def sum_two_smallest_numbers(numbers)
   # numbers.sort.first(2).reduce(:+)  
 end
 
-p sum_two_smallest_numbers [9,5,5,7,8,6]
+# p sum_two_smallest_numbers [9,5,5,7,8,6]
+
+
+
+
+
+## Q 20
+# find the numbers of duplicate chars
+
+def duplicate_count(text)
+  # arr = []
+  # text.downcase.chars.each { |c| text.downcase.count(c) >= 2 && !arr.include?(c) ? arr << c : next }
+  # arr.count
+  # or 
+	# ('a'..'z').count { |c| text.downcase.count(c) > 1 }
+end
+
+# p duplicate_count 'abcde'
+# p duplicate_count "abcdeaa"
+# p duplicate_count "abcdeaB"
+# p duplicate_count "Indivisibilities"
+
+
+
+
+
+
+
 
 
 
