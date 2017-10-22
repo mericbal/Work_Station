@@ -305,4 +305,22 @@ end
 
 
 
+
+# QQ 19
+# sum the 2 smallets nums in the array
+
+def sum_two_smallest_numbers(numbers)
+  numbers.sort.first + numbers.sort[1]
+end
+
+# p sum_two_smallest_numbers [9,5,5,7,8,6]
+
+
+
+
+
+
+
+
+
 #
