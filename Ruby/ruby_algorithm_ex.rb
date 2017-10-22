@@ -311,10 +311,13 @@ end
 
 def sum_two_smallest_numbers(numbers)
   numbers.sort.first + numbers.sort[1]
+  # or
+  # numbers.sort.min(2).reduce(:+)
+  # or
+  # numbers.sort.first(2).reduce(:+)  
 end
 
-# p sum_two_smallest_numbers [9,5,5,7,8,6]
-
+p sum_two_smallest_numbers [9,5,5,7,8,6]
 
 
 
