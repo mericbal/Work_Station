@@ -323,7 +323,7 @@ end
 
 
 
-## Q 20
+# QQ 20
 # find the numbers of duplicate chars
 
 def duplicate_count(text)
@@ -338,6 +338,59 @@ end
 # p duplicate_count "abcdeaa"
 # p duplicate_count "abcdeaB"
 # p duplicate_count "Indivisibilities"
+
+
+
+
+
+
+# QQ 21
+# find highest and lowest numbers
+
+def high_and_low str
+	str.split().map { |n| n.to_i }.max.to_s + ' ' + str.split().map { |n| n.to_i }.min.to_s
+	# or
+	# str.split.map(&:to_i).minmax.reverse.join(' ')
+end
+
+# numbers = '1 72 -6 99 -77'
+# p high_and_low numbers
+
+
+
+
+
+
+
+
+# QQ 22
+
+
+# def increment_string(input)
+# 	text = input.chars.reject { |c| c.downcase =~ }
+#   nums = input.chars.select { |c| c.downcase =~ /[1234567890]/ }.join.next
+#   text + nums
+# end
+
+# # p 'foobarzz77'.chars.select { |c| c.downcase =~ /[1234567890]/ }.join.to_i
+
+# # p [1,2,3].include? (1)
+
+# # p 'foobar77'.chars.include? (0..9)
+
+# # p ['foo','bar','bir','iki'].last(2)
+
+# # p 'foobar77'.chars.reject { |c| c == /a..z/ }
+
+# p increment_string "foo"
+# p increment_string "foobar001"
+# p increment_string "foobar1"
+# p increment_string "foobar00"
+# p increment_string "foobar99"
+# p increment_string ""
+
+# # p ['a','b','c','1','2','3'].sort
+
 
 
 
