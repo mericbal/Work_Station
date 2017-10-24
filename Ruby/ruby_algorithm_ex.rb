@@ -375,8 +375,30 @@ def largest_5 str
 	str.split('').each_cons(5).max.join.to_i
 end
 
-p largest_5 '1234569990789'
-p largest_5 '99990999919999299997'
+# p largest_5 '1234569990789'
+# p largest_5 '99990999919999299997'
+
+
+
+
+
+# QQ 23
+# find the middle character or chars
+
+def middle str
+	mid = str.size/2
+	str.length.even? ? str[(mid-1)..mid] : str[mid] 
+	
+	# or
+	# str[(str.size-1)/2..str.size/2]
+end
+
+# p middle 'afud' # 4
+# p middle 'abFde' # 5
+
+
+
+
 
 
 
