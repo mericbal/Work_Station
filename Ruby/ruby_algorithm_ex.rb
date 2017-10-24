@@ -515,3 +515,36 @@ end
 
 # p repeat_str 7,'Fuck !-'
 
+
+
+
+
+
+# Q 30 
+# remove the first and last letter from the string 
+
+def remove_char(str)
+  str[1...-1]
+  
+  # or
+	# str.slice(1,str.length-2)
+end
+
+# p remove_char 'Galatasaray'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#
