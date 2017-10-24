@@ -400,6 +400,36 @@ end
 
 
 
+# QQ 24 
+# find the biggest possible number
+
+def descending_order numbers
+  numbers.to_s.chars.sort.reverse.join.to_i
+
+  # or
+	# numbers.to_s.chars.sort { |a,b| b <=> a }.join.to_i
+end
+
+p descending_order 199900009
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
