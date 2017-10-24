@@ -410,18 +410,29 @@ def descending_order numbers
 	# numbers.to_s.chars.sort { |a,b| b <=> a }.join.to_i
 end
 
-p descending_order 199900009
+# p descending_order 199900009
 
 
 
 
 
 
+# QQ 25
+# square all the numbers
+# 123 => 149
+# 941 => 81161 (9)x2 + (4)x2 + (1)x2
 
+def square_digits num
+  str = []
+  num.to_s.each_char { |n| str << (n.to_i)*(n.to_i) }
+  str.join.to_i
+  
+  # or 
+  # num.to_s.chars.map { |x| x.to_i**2 }.join.to_i
+end
 
-
-
-
+# p square_digits 941
+# p square_digits 567
 
 
 
