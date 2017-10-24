@@ -475,71 +475,27 @@ def xoxo str
   # str.downcase.count('x') == str.downcase.count('o')
 end
 
-p xoxo 'xxooxx' # => false
-p xoxo 'xxxooo' # => true
+# p xoxo 'xxooxx' # => false
+# p xoxo 'xxxooo' # => true
 
 
 
 
 
 
+# Q 28
+# sum all the possitive nums 
+
+def positive_sum(arr)
+	return 0 if arr.empty? || arr.select { |n| n > 0 }.empty? 
+  arr.select { |n| n > 0 }.reduce(:+)
+  
+  # or
+  # arr.select(&:positive?).reduce(0,:+)
+end
+
+# p positive_sum [1,2,-3,4,-5]
 
 
 
 
-
-
-
-
-
-
-#
-
-
-
-
-
-# QQ 22
-
-
-# def increment_string(input)
-# 	text = input.chars.reject { |c| c.downcase =~ }
-#   nums = input.chars.select { |c| c.downcase =~ /[1234567890]/ }.join.next
-#   text + nums
-# end
-
-# # p 'foobarzz77'.chars.select { |c| c.downcase =~ /[1234567890]/ }.join.to_i
-
-# # p [1,2,3].include? (1)
-
-# # p 'foobar77'.chars.include? (0..9)
-
-# # p ['foo','bar','bir','iki'].last(2)
-
-# # p 'foobar77'.chars.reject { |c| c == /a..z/ }
-
-# p increment_string "foo"
-# p increment_string "foobar001"
-# p increment_string "foobar1"
-# p increment_string "foobar00"
-# p increment_string "foobar99"
-# p increment_string ""
-
-# # p ['a','b','c','1','2','3'].sort
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#
