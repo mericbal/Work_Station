@@ -438,10 +438,62 @@ end
 
 
 
+# QQ 26
+# given two numbers , sum all the numbers between
+
+def get_sum(a,b)
+  # a < b ? range = (a..b) : range = (b..a)
+  # range.reduce :+
+
+  # or
+  a < b ? (a..b).reduce(:+) : (b..a).reduce(:+)
+end
+
+# p get_sum -1,6 # -1,1,2,3,4,5,6 => 20
+# p get_sum 5,-1 # 5,4,3,2,1,-1 => 14
+
+def get_sum2 *args
+	(args.min..args.max).reduce(:+)
+end
+
+# p get_sum2 -1,6 # -1,1,2,3,4,5,6 => 20
+# p get_sum2 5,-1 # 5,4,3,2,1,-1 => 14
 
 
 
 
+
+
+# Q 27
+# find if x and o are matching numbers
+
+def xoxo str 
+  x,o = str.downcase.count('x'),str.downcase.count('o')
+  x == o
+  
+  # or 
+  # str.downcase.count('x') == str.downcase.count('o')
+end
+
+p xoxo 'xxooxx' # => false
+p xoxo 'xxxooo' # => true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#
 
 
 
