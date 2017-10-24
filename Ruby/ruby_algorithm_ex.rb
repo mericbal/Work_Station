@@ -360,6 +360,27 @@ end
 
 
 
+# QQ 22
+# return the consecutive largest 5 digit number
+
+def largest_5 str
+	# largest = str[0..2].to_i
+	# str.chars.each_with_index do |n,i|
+	# 	cons = str[i..(i+2)].to_i
+	# 	if cons >= largest then largest = cons end
+	# end
+	# largest
+	
+	# or 
+	str.split('').each_cons(5).max.join.to_i
+end
+
+p largest_5 '1234569990789'
+p largest_5 '99990999919999299997'
+
+
+
+
 
 
 
