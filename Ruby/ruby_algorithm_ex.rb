@@ -462,6 +462,43 @@ end
 
 
 
+
+
+# Q 27
+# find if x and o are matching numbers
+
+def xoxo str 
+  x,o = str.downcase.count('x'),str.downcase.count('o')
+  x == o
+  
+  # or 
+  # str.downcase.count('x') == str.downcase.count('o')
+end
+
+p xoxo 'xxooxx' # => false
+p xoxo 'xxxooo' # => true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#
+
+
+
+
+
 # QQ 22
 
 
