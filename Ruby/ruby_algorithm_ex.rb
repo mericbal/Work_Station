@@ -499,3 +499,19 @@ end
 
 
 
+
+
+# Q 29
+# repeat the given string n times 
+
+def repeat_str (n, str)
+  # arr = []
+  # str.chars.cycle(n) { |x| arr << x }
+  # arr.join
+  
+  # or 
+  str * n
+end
+
+# p repeat_str 7,'Fuck !-'
+
