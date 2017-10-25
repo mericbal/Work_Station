@@ -579,8 +579,8 @@ end
 # QQ 33 # 8 kyu
 # sum all the numbers squared 
 
-def sum_sq numbers
-	numbers.map { |x| x**2 }.reduce(:+)
+def sum_sq array
+	array.map { |x| x**2 }.reduce(:+)
 end
 
 # p sum_sq [2,3,4,5]
@@ -589,6 +589,16 @@ end
 
 
 
+# QQ 34 # 8 kyu
+# reverse the mubers and give an array
+
+def digitize numbers
+	numbers.to_s.reverse.chars.map { |n| n.to_i }
+	# or
+  # numbers.to_s.reverse.chars.map(&:to_i)
+end
+
+# p digitize 1234
 
 
 
