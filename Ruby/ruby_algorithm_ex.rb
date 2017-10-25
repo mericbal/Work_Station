@@ -608,13 +608,35 @@ end
 # QQ 35 # 8 kyu
 # find the needle in the haystack :)
 
-# def find_needle haystack
-# 	"needle is found on index " + haystack.find_index('needle').to_s
-# end
+def find_needle haystack
+	"needle is found on index " + haystack.find_index('needle').to_s
+end
 
 # p find_needle ['a','b','c','needle',true,1,7]
 
 
+
+
+
+
+# QQ 36 # 8 kyu
+# create a calculator 
+
+def calculator op,v1,v2
+	# case op
+	# 	when '+' then v1 + v2
+	# 	when '-' then v1 - v2
+	# 	when '*' then v1 * v2
+	# 	when '/' then v1 / v2
+	# end
+	
+	# or 
+	v1.send op,v2
+	# or
+	# eval("#{v1}#{op}#{v2}")
+end
+
+# p calculator "+",1,6
 
 
 
