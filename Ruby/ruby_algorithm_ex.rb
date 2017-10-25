@@ -643,6 +643,29 @@ end
 
 
 
+# QQ 37
+# print the dollars and cents 
+
+def money number
+	format("$ %.2f", number)
+	
+	# or 
+	# "$ %.2f" % number
+end
+
+# p money 77
+# p money 119.99
+
+
+
+
+
+
+
+
+
+
+
 
 
 
