@@ -464,7 +464,7 @@ end
 
 
 
-# Q 27
+# QQ 27
 # find if x and o are matching numbers
 
 def xoxo str 
@@ -483,7 +483,7 @@ end
 
 
 
-# Q 28
+# QQ 28
 # sum all the possitive nums 
 
 def positive_sum(arr)
@@ -501,7 +501,7 @@ end
 
 
 
-# Q 29
+# QQ 29
 # repeat the given string n times 
 
 def repeat_str (n, str)
@@ -520,7 +520,7 @@ end
 
 
 
-# Q 30 
+# QQ 30 
 # remove the first and last letter from the string 
 
 def remove_char(str)
@@ -536,11 +536,25 @@ end
 
 
 
+# QQ 31
+# 'Fire!' if all people are ready to fire !
 
 
+# a = {'Mike' => 'yes', 'Joe' => 'yes','Johnson' => 'yes','Peter' => 'yes'}
+# b = {'Mick' => 'no','Joe' => 'no','Johnson' => 'yes','Peter' => 'yes'}
 
+def cannons? people
+	people.keep_if { |k,v| v == 'yes' }.count == 4 ? 'Fire!' : 'Shiver me timbers!'
+	
+	# or
+	# people.has_value?('no') ? 'Shiver me timbers!' : 'Fire!'
+	# or
+  # people.values.include?('no')? 'Shiver me timbers!' : 'Fire!'
+  # people.keys
+end
 
-
+# p cannons?(a) # = 'Fire!'
+# p cannons?(b) # = 'Shiver me timbers!'
 
 
 
