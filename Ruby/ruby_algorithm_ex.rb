@@ -643,7 +643,7 @@ end
 
 
 
-# QQ 37
+# QQ 37 # 8 kyu
 # print the dollars and cents 
 
 def money number
@@ -662,8 +662,18 @@ end
 
 
 
+# QQ 38 # 8 kyu
+# is it even ?
 
+def test_even number
+	number.class == Float || number.odd? ? false : true
+	# or
+	# number.is_a?(Float) || number.odd? ? false : true
+end
 
+# p test_even 12
+# p test_even 77
+# p test_even 77.2
 
 
 
