@@ -536,6 +536,7 @@ end
 
 
 
+
 # QQ 31
 # 'Fire!' if all people are ready to fire !
 
@@ -555,6 +556,32 @@ end
 
 # p cannons?(a) # = 'Fire!'
 # p cannons?(b) # = 'Shiver me timbers!'
+
+
+
+
+
+
+# QQ 32 # 8 kyu
+# make a sentence with all the words given
+
+def sentence words
+	words.join ' '
+end
+
+# a = ['hey', 'this', 'shit', 'working', '!']
+# p sentence a
+
+
+
+
+
+
+
+
+
+
+
 
 
 
