@@ -153,6 +153,20 @@ range10.find_index(7) # => 6 		# Returns the index of 7
 
 
 
+## format
+
+numero = 77
+numero2 = 77.66
+
+format("$%.2f", numero) #=> "$77.00" 
+format("$%.2f", numero2) #=> "$77.66" 
+
+'$$%.2f' % numero  #=> "$$77.00"
+'$$%.2f' % numero2  #=> "$$77.66"
+
+
+
+
 ## grep and grep_v
 
 range10.grep 3..5 # => [3,4,5]	# Returns the numbers from 3 to 5
