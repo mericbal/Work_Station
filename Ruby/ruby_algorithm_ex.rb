@@ -576,8 +576,14 @@ end
 
 
 
+# QQ 33 # 8 kyu
+# sum all the numbers squared 
 
+def sum_sq numbers
+	numbers.map { |x| x**2 }.reduce(:+)
+end
 
+# p sum_sq [2,3,4,5]
 
 
 
