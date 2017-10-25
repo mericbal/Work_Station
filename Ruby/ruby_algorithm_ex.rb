@@ -604,4 +604,24 @@ end
 
 
 
+
+# QQ 35 # 8 kyu
+# find the needle in the haystack :)
+
+# def find_needle haystack
+# 	"needle is found on index " + haystack.find_index('needle').to_s
+# end
+
+# p find_needle ['a','b','c','needle',true,1,7]
+
+
+
+
+
+
+
+
+
+
+
 #
