@@ -793,7 +793,34 @@ def powers_of_two(n)
   (0..n).map { |x| 2**x }
 end
 
-p powers_of_two(4) # => [1,2,4,8,16]
+# p powers_of_two(4) # => [1,2,4,8,16]
+
+
+
+
+
+
+# QQ 46 # 8 kyu
+# remove the ! only if it is end of the string
+
+def remove_! str
+	# str.slice(-1) == '!' ? str.chop : str
+	
+	# or
+	# str.chars.last == "!" ? str.chop : str
+	# or
+	str.end_with?('!') ? str.chop : str
+	# or
+	# str.end_with?("!") ? str.chomp('!') : str
+end
+
+p remove_! 'merici !'
+p remove_! 'merici !!'
+
+
+# p 'mericiiii!!!'.chomp('!')
+# p 'mericiiii!!!'.end_with?('!')
+
 
 
 
