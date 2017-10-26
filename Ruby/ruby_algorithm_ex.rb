@@ -814,12 +814,27 @@ def remove_! str
 	# str.end_with?("!") ? str.chomp('!') : str
 end
 
-p remove_! 'merici !'
-p remove_! 'merici !!'
+# p remove_! 'merici !'
+# p remove_! 'merici !!'
 
 
-# p 'mericiiii!!!'.chomp('!')
-# p 'mericiiii!!!'.end_with?('!')
+
+
+
+
+# QQ 47 # 6 kyu
+# find the sum of all the numbers  which can be divided to 3 and 5 
+
+def sum_3_and_5 number
+  (2...number).select {|i| i%3==0 || i%5==0}.reduce(:+)
+  # or
+  # (2...number).find_all {|i| i%3==0 or i%5==0}.reduce(:+)
+end
+
+
+p sum_3_and_5 10 #=> 23
+
+
 
 
 
