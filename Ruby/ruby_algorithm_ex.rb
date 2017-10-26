@@ -764,8 +764,26 @@ def fake_bin str
   str.gsub(/[0-4]/,'0').gsub(/[5-9]/, '1')
 end
 
+# p fake_bin '432199888'
 
-p fake_bin '432199888'
+
+
+
+
+
+# QQ 44 # 8 kyu
+# reverse the string words
+
+def reversed(string)
+  string.split.reverse.join(' ')
+end
+
+# p reversed 'Hey fuck you !'
+
+
+
+
+
 
 
 
