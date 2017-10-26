@@ -102,7 +102,7 @@ end
 
 def mask input
 	masked = []
-	input.length <= 4 ? input : (input.length-4).times { masked << '#' }
+	input.length <= 4 ? inpuct : (input.length-4).times { masked << '#' }
 	(masked + input.chars.last(4)).join
 end
 
@@ -674,6 +674,25 @@ end
 # p test_even 12
 # p test_even 77
 # p test_even 77.2
+
+ 
+
+
+
+# QQ 39 # 8 kyu
+# bus stops at busstops and picks up and drops off some people 
+# array show people hop on hop off
+
+
+def number(array)
+  # pass = 0
+  # array.map { |a,b| pass += a-b }
+  # pass
+	array.map { |on,off| on - off }.reduce(:+)
+end
+
+# p number([[1,2],[10,2]])
+
 
 
 
