@@ -102,7 +102,7 @@ end
 
 def mask input
 	masked = []
-	input.length <= 4 ? inpuct : (input.length-4).times { masked << '#' }
+	input.length <= 4 ? input : (input.length-4).times { masked << '#' }
 	(masked + input.chars.last(4)).join
 end
 
@@ -151,12 +151,12 @@ end
 # QQ 10
 # return the count of vowels in the input
 
-def vow_counter input
+def vowel_counter input
 	input.count 'aeuio'
 end
 
-# p vow_counter 'Galatasaray'
-# p vow_counter 'Meric'
+# p vowel_counter 'Galatasaray'
+# p vowel_counter 'Meric'
 
 
 
@@ -698,21 +698,17 @@ end
 
 
 
-# QQ 40
-# remove first and last chars from a string
 
-def remove_char(str)
+# QQ 40 # 8 kyu
+# double the chars in a str
+
+def double_char(str)
+  str.chars.map! { |x| x+x }.join
   # or
-  # str[1...-1]
+  # str.gsub /(.)/, '\1\1' 
 end
 
-
-p remove_char
-
-
-
-
-
+p double_char "merici"
 
 
 
