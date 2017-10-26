@@ -525,7 +525,9 @@ end
 
 def remove_char(str)
   str[1...-1]
-  
+ 	
+ 	# or 
+  # str.chars.slice(1...str.size-1).join
   # or
 	# str.slice(1,str.length-2)
 end
@@ -683,15 +685,31 @@ end
 # bus stops at busstops and picks up and drops off some people 
 # array show people hop on hop off
 
-
-def number(array)
+def bus_stops(array)
   # pass = 0
   # array.map { |a,b| pass += a-b }
   # pass
 	array.map { |on,off| on - off }.reduce(:+)
 end
 
-# p number([[1,2],[10,2]])
+# p bus_stops([[1,2],[10,2]])
+
+
+
+
+
+# QQ 40
+# remove first and last chars from a string
+
+def remove_char(str)
+  # or
+  # str[1...-1]
+end
+
+
+p remove_char
+
+
 
 
 
