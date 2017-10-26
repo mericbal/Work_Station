@@ -744,6 +744,34 @@ def no_space str
 	str.gsub(" ","")
 end
 
-p no_space 'Fuck You Man !'
+# p no_space 'Fuck You Man !'
+
+
+
+
+
+
+# QQ 43 # 8 kyu
+# fake binary all the numbers in the string 
+# 0 to smaller than 5 , 1 to bigger than 5 
+
+def fake_bin str
+	# str.chars.map { |n| n.to_i < 5 ? '0' : '1' }.join(' ')
+	
+	# or 
+  str.gsub(/[01234]/,'0').gsub(/[56789]/, '1')
+  # or
+  str.gsub(/[0-4]/,'0').gsub(/[5-9]/, '1')
+end
+
+
+p fake_bin '432199888'
+
+
+
+
+
+
+
 
 #
