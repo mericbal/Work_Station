@@ -708,7 +708,32 @@ def double_char(str)
   # str.gsub /(.)/, '\1\1' 
 end
 
-p double_char "merici"
+# p double_char "merici"
+
+
+
+
+
+
+# QQ 41 # 8 kyu
+# negative all the numbers in an array
+
+def invert list 
+	# list.map! { |x|-x }
+	# or
+  list.map(&:-@)
+end
+
+p invert [1,2,3,4]
+
+
+
+
+
+
+
+
+
 
 
 
