@@ -724,17 +724,26 @@ def invert list
   list.map(&:-@)
 end
 
-p invert [1,2,3,4]
+# p invert [1,2,3,4]
 
 
 
 
 
+# QQ 42 # 8 kyu
+# remove the spaces in the string
 
+def no_space str
+	# str.chars.reject { |x| x =~ /[ ]/ }.join
+	
+	# or
 
+  # str.delete(' ')
+  # str.gsub(/\s/,"")
+  # str.split(" ").join
+	str.gsub(" ","")
+end
 
-
-
-
+p no_space 'Fuck You Man !'
 
 #
