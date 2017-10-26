@@ -785,9 +785,15 @@ end
 
 
 
+# QQ 45 # 8 kyu
+# powers of 2
+# retrun array with n times 2
 
+def powers_of_two(n)
+  (0..n).map { |x| 2**x }
+end
 
-
+p powers_of_two(4) # => [1,2,4,8,16]
 
 
 
