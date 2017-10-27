@@ -851,18 +851,23 @@ end
 
 
 
+# QQ 49 # 6 kyu # recursive
+# 99 => 9+9= 18 => 1+8 = 9 solution
+
+def digital_root(n)
+  # while n > 9
+  #   n = n.to_s.chars.map{|x| x.to_i}.reduce(:+)
+  # end
+  # n
+  # or 
+  n < 10 ? n : digital_root(n / 10 + n % 10)
+end
+
+# p digital_root(999) # 7
 
 
 
 
 
-
-
-
-
-
-p [1,2,3,4,5,1,1,3,4,].uniq
-
-p 'merici'.chars.uniq.join
 
 #
