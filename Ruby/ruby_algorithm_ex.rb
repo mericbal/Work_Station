@@ -831,13 +831,38 @@ def sum_3_and_5 number
   # (2...number).find_all {|i| i%3==0 or i%5==0}.reduce(:+)
 end
 
-
-p sum_3_and_5 10 #=> 23
-
+# p sum_3_and_5 10 #=> 23
 
 
 
 
+# QQ 48 # 6 kyu
+# Given an array, find the int that appears an odd number of times.
+# There will always be only one integer that appears an odd number of times.
 
+def find_it array
+  array.detect { |n| array.count(n).odd? }
+	
+	# or
+	# array.reduce(:^)
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+p [1,2,3,4,5,1,1,3,4,].uniq
+
+p 'merici'.chars.uniq.join
 
 #
