@@ -246,9 +246,13 @@ nums.member?(33) # => false 	# Array does NOT have the number
 
 ## partition
 
+# Returns two arrays with true and false 
+
 range10.partition { |x| x.even? } # [ [2,4,6,,8,10], [1,3,5,7,9] ]
 
-# Returns two arrays with true and false 
+integers = [1,2,3,4,5,6,7]
+odd, even = integers.partition(&:odd?)
+
 
 
 
@@ -302,6 +306,15 @@ range10.take(2) # => [1,2]
 
 range10.take_while { |x| x <= 4 } # => [1,2,3,4]
 # Returns an array with containing the block 
+
+
+
+
+## uniq
+# returns an array with repeatitive 
+
+[1,2,3,2,1].uniq 
+
 
 
 
