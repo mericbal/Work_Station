@@ -708,7 +708,7 @@ def double_char(str)
   # str.gsub /(.)/, '\1\1' 
 end
 
-# p double_char "merici"
+p double_char "merici"
 
 
 
@@ -864,6 +864,58 @@ def digital_root(n)
 end
 
 # p digital_root(999) # 7
+
+
+
+
+
+# QQ 50 # 6 kyu # blocks
+
+# You are given an array (which will have a length of at least 3,
+# but could be very large) containing integers. 
+# The array is either entirely comprised of odd integers 
+# or entirely comprised of even integers except for a single integer N. 
+# Write a method that takes the array as an argument and returns N.
+# For example:
+# [2, 4, 0, 100, 4, 11, 2602, 36]
+# Should return: 11
+# [160, 3, 1719, 19, 11, 13, -21]
+# Should return: 160
+
+def find_outlier array
+  array.count{|x| x.odd? } > 1 ? array.find { |x| x.even? } : array.find { |x| x.odd? }
+  # or 
+	block = array.one?(&:even?) ? :even? : :odd?
+	array.find(&block)
+	# or
+  array.count(&:odd?) > 1 ? array.find(&:even?) : array.find(&:odd?)
+end
+
+# p find_outlier [2, 4, 0, 100, 4, 11, 2602, 36] #=> 11
+# p find_outlier [160, 3, 1719, 19, 11, 13, -21] #=> 160
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
