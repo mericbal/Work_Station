@@ -941,7 +941,31 @@ def remove_every_other(arr)
   arr.select.with_index { |x,i| i.even? }
 end
 
-p remove_every_other [1,2,3,4,5,6]
+# p remove_every_other [1,2,3,4,5,6]
+
+
+
+
+
+
+# QQ 54 # 8 kyu  # if statement
+# give some discount to rental cars 
+# 20 if 3 or more days , 50 more than 7 days 
+
+def rental_car_cost(d) 
+	40*d - (d>6 ? 50 : d>2 ? 20 : 0) 
+end
+
+# p rental_car_cost 12
+
+def fuck int
+	'!!! ' + ( int < 2 ? ' fuck' : int < 5 ? ' FucK' : 'FUCK !!!' )
+end
+
+# p fuck(1) and p fuck(3) and p fuck(6)
+
+
+
 
 
 
