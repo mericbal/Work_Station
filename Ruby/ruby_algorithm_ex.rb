@@ -708,7 +708,7 @@ def double_char(str)
   # str.gsub /(.)/, '\1\1' 
 end
 
-p double_char "merici"
+# p double_char "merici"
 
 
 
@@ -932,8 +932,16 @@ end
 
 
 
+# QQ 53 # 8 kyu
+# remove the even indexes from array
 
+def remove_every_other(arr)
+  arr.reject.with_index { |_,i| i.odd? } 
+  # or 
+  arr.select.with_index { |x,i| i.even? }
+end
 
+p remove_every_other [1,2,3,4,5,6]
 
 
 
