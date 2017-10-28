@@ -915,9 +915,17 @@ end
 
 
 
+# QQ 52 # 8 kyu
+# if name starts with R or r can touch this or no
 
+def can_touch_this? name
+	name.start_with?("r","R") ? "#{name} can touch this" : "#{name} caN'T tocuh this"
+	# or
+ 	#name[0] =~ /[Rr]/ ? name + ' can ...' : name + 'caN`T ...' 
+end
 
-
+# p can_touch_this? 'Meric'
+# p can_touch_this? 'Rich'
 
 
 
