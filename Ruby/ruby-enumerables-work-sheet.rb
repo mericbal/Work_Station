@@ -266,6 +266,14 @@ odd, even = integers.partition(&:odd?)
 
 
 
+## prime
+
+# Retrun true or false 
+
+Prime.prime?(13) #=> true
+
+
+
 ## reduce 	!!!
 
 range10.reduce(:+) # => 55 		# Sums all numbers

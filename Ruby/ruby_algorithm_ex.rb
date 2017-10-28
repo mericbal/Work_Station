@@ -969,4 +969,19 @@ end
 
 
 
+# QQ 55 # 6 kyu
+# sum all the numbers in the prime indexes 
+
+def total(arr)
+  arr.empty? ? 0 : arr.select.with_index { |x,i| Prime.prime?(i) }.reduce(:+)
+end
+
+# p total [] 									#=> 0
+# p total [1,2,3,4] 					#=> 7
+# p total [1,2,3,4,5,6]  			#=> 13
+# p total [1,2,3,4,5,6,7,8] 	#=> 21
+
+
+
+
 #
