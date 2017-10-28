@@ -188,6 +188,16 @@ range10.group_by { |i| i%2 }
 
 
 
+
+## if statement 
+
+
+def fuck int
+	'!!! ' + ( int < 2 ? ' fuck' : int < 5 ? ' FucK' : 'FUCK !!!' )
+end
+
+
+
 ## include? # !!!
 
 range10.include?(7) # => true 		# Includes (7)
