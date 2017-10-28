@@ -899,7 +899,14 @@ end
 
 
 
+# QQ 51 # 7 kyu
+# sum of all or 0
 
+def sum(numbers)
+	numbers.reduce(0, :+)
+	# or
+  numbers.reduce(:+) || 0
+end
 
 
 
