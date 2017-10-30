@@ -1050,5 +1050,27 @@ end
 
 
 
+# QQ 59 # 8 kyu
+# take apart the arrays 
+
+def apartition list, &block
+	list.partition(&block)
+end
+
+a = [ 0,1,2,3,4,5,6,7,8,9 ]
+
+p apartition(a) {|x| x.even?  }
+
+
+
+
+
+
+
+
+
+
+
+
 
 #
