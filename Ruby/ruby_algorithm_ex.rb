@@ -1012,7 +1012,20 @@ end
 
 
 
+# QQ 57 # 7 kyu
+# make the array an hash 
+a = [ [1,2], [3,4], [5,6] ] # = > { 1=>2, 3=>4, 5=>6 }
 
+def to_hash list
+	# hash = {}
+	# list.each { |k,v| hash[k] = v }
+	# hash 
+	
+	# or 
+	list.to_h
+end
+
+# p to_hash a
 
 
 
