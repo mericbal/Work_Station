@@ -981,6 +981,43 @@ end
 # p total [1,2,3,4,5,6]  			#=> 13
 # p total [1,2,3,4,5,6,7,8] 	#=> 21
 
+# p Prime.prime? 0
+# p Prime.prime? 1	
+# p Prime.prime? 2	
+# p Prime.prime? 3
+
+
+
+
+
+
+# QQ 56 # 7 kyu
+# get the American floor nuumber 
+# 1 == 0 , 13 is not present
+
+
+def get_real_floor(n)
+  n == 0 ? 0 : n < 0 ? n : n > 13 ? n-2 : n-1
+  # or
+  # n >= 1 ? (n > 13 ? n-2 : n-1) : n
+end
+
+# p get_real_floor 1
+# p get_real_floor 13
+# p get_real_floor 21
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
