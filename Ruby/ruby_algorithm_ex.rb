@@ -1014,7 +1014,6 @@ end
 
 # QQ 57 # 7 kyu
 # make the array an hash 
-a = [ [1,2], [3,4], [5,6] ] # = > { 1=>2, 3=>4, 5=>6 }
 
 def to_hash list
 	# hash = {}
@@ -1025,7 +1024,25 @@ def to_hash list
 	list.to_h
 end
 
+# a = [ [1,2], [3,4], [5,6] ] # = > { 1=>2, 3=>4, 5=>6 }
 # p to_hash a
+
+
+
+
+
+
+# QQ 58 # 8 kyu
+# zip the arrays together 
+
+def zip first, second
+  first.zip(second).flatten
+end
+
+# a = [ 1,2,3,4 ]
+# b = [ 'a','b','c','d' ]
+
+# p zip(a,b)
 
 
 
