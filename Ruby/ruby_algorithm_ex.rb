@@ -1057,18 +1057,25 @@ def apartition list, &block
 	list.partition(&block)
 end
 
-a = [ 0,1,2,3,4,5,6,7,8,9 ]
+# a = [ 0,1,2,3,4,5,6,7,8,9 ]
 
-p apartition(a) {|x| x.even?  }
-
-
+# p apartition(a) {|x| x.even?  }
 
 
 
 
 
 
+# QQ 60 # 8 kyu
+# return each consecutive nums in an array
 
+def each_cons list, n
+  list.each_cons(n).to_a
+end
+
+# a= [1,2,3,4,5,6]
+
+# p each_cons a,2
 
 
 
