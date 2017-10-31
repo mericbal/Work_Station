@@ -1015,14 +1015,14 @@ end
 # QQ 57 # 7 kyu
 # make the array an hash 
 
-# def to_hash list
+def to_hash list
 	# hash = {}
 	# list.each { |k,v| hash[k] = v }
 	# hash 
 	
 	# or 
-	# list.to_h
-# end
+	list.to_h
+end
 
 # a = [ [1,2], [3,4], [5,6] ] # = > { 1=>2, 3=>4, 5=>6 }
 # p to_hash a
@@ -1113,6 +1113,20 @@ end
 # p no_boring_zeros 1230045
 # p no_boring_zeros 11001100000000
 
+
+
+
+
+
+
+# QQ 63 # 7 kyu
+# only show 2 floats after coma
+
+def two_decimal_places(n)
+  n.round(2)
+end
+
+# p two_decimal_places 12.43456
 
 
 
