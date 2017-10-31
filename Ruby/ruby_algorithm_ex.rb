@@ -1015,14 +1015,14 @@ end
 # QQ 57 # 7 kyu
 # make the array an hash 
 
-def to_hash list
+# def to_hash list
 	# hash = {}
 	# list.each { |k,v| hash[k] = v }
 	# hash 
 	
 	# or 
-	list.to_h
-end
+	# list.to_h
+# end
 
 # a = [ [1,2], [3,4], [5,6] ] # = > { 1=>2, 3=>4, 5=>6 }
 # p to_hash a
@@ -1093,6 +1093,29 @@ end
 # a = %w( ab bc cd de ef )
 
 # p sort_first a 
+
+
+
+
+
+
+
+# QQ 62 # 7 kyu
+# remove the 0 in the end
+
+def no_boring_zeros number
+	number.to_s.gsub(/0*$/,"").to_i
+
+	# or
+	# number.to_s.split('0').join('0')
+end
+
+# p no_boring_zeros 1230045
+# p no_boring_zeros 11001100000000
+
+
+
+
 
 
 
