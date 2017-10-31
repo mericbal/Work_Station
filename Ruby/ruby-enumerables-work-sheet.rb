@@ -297,6 +297,19 @@ range10.reverse_each { |x| x }
 
 
 
+
+## round (n)
+
+123.456789.round(2) #=> 123.45
+123.456789.round(3) #=> 123.456
+123.456789.round(4) #=> 123.4567
+
+
+
+
+
+
+
 ## select 
 
 range10.select { |x| x.even? } # => [2,4,6,8,10]
