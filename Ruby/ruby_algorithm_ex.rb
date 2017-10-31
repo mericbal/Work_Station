@@ -1080,4 +1080,22 @@ end
 
 
 
+
+
+
+# QQ 61 # 7 kyu
+# put stars between chars in an array
+
+def sort_first array
+	array.sort.first.chars.join('***')
+end
+
+# a = %w( ab bc cd de ef )
+
+# p sort_first a 
+
+
+
+
+
 #
