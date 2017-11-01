@@ -331,7 +331,7 @@ def duplicate_count(text)
   # text.downcase.chars.each { |c| text.downcase.count(c) >= 2 && !arr.include?(c) ? arr << c : next }
   # arr.count
   # or 
-	# ('a'..'z').count { |c| text.downcase.count(c) > 1 }
+	('a'..'z').count { |c| text.downcase.count(c) > 1 }
 end
 
 # p duplicate_count 'abcde'
@@ -734,7 +734,7 @@ end
 # remove the spaces in the string
 
 def no_space str
-	# str.chars.reject { |x| x =~ /[ ]/ }.join
+	str.chars.reject { |x| x =~ /[ ]/ }.join
 	
 	# or
 
@@ -1015,7 +1015,7 @@ end
 # QQ 57 # 7 kyu
 # make the array an hash 
 
-def to_hash list
+def to_make_it_a_hash list
 	# hash = {}
 	# list.each { |k,v| hash[k] = v }
 	# hash 
@@ -1127,6 +1127,28 @@ def two_decimal_places(n)
 end
 
 # p two_decimal_places 12.43456
+
+
+
+
+
+
+
+
+# QQ 64 # 6 kyu
+# create a phone number
+
+def createPhoneNumber(array)
+	'(%d%d%d) %d%d%d-%d%d%d%d' % array.shuffle
+end
+
+# a = [1,2,3,4,5,6,7,8,9,0]
+
+# p createPhoneNumber a
+
+
+
+
 
 
 
