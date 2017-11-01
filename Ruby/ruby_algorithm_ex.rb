@@ -1152,9 +1152,22 @@ end
 
 
 
+# QQ 65 # 5 kyu
+# You are given a string of numbers between 0-9. 
+# Find the average of these numbers and return 
+# it as a floored whole number (ie: no decimal places) 
+# written out as a string. Eg:
+# "zero nine five two" -> "four"
+# If the string is empty or includes a number greater than 9, return "n/a"
 
+def average_string(s)
+  a = %w(zero one two three four five six seven eight nine)
+  acc,rej = s.split.partition { |x| a.include?(x) }
+  rej.empty? && !s.empty? ? a[acc.map! { |x| a.find_index(x) }.reduce(:+)/acc.size] : 'n/a'
+end
 
-
+# p average_string("zero nine five two") #=> four
+# p average_string 'asd er er' #=> n/a
 
 
 #
