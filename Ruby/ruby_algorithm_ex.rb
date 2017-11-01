@@ -1162,12 +1162,33 @@ end
 
 def average_string(s)
   a = %w(zero one two three four five six seven eight nine)
+  #
   acc,rej = s.split.partition { |x| a.include?(x) }
   rej.empty? && !s.empty? ? a[acc.map! { |x| a.find_index(x) }.reduce(:+)/acc.size] : 'n/a'
+  
+  # or one liner
+  # s.split(" ").reject { |x| a.include?(x) }.empty? && !s.empty? ? a[s.split(' ').select { |x| a.include?(x) }.map! { |x| a.find_index(x) }.reduce(:+)/s.split.select { |x| a.include?(x) }.size] : 'n/a'     
 end
 
 # p average_string("zero nine five two") #=> four
 # p average_string 'asd er er' #=> n/a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #
