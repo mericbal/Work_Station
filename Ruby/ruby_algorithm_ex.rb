@@ -1207,17 +1207,15 @@ end
 
 
 
+# QQ 67 # 7kyu 
 
+def sequence_sum(begin_number, end_number, step)
+  (begin_number..end_number).step(step).reduce(:+)
+end
 
-
-
-
-
-
-
-
-
-
+# p sequenceSum(2,6,2) #=== 12 # 2 + 4 + 6
+# p sequenceSum(1,5,1) #=== 15 # 1 + 2 + 3 + 4 + 5
+# p sequenceSum(1,5,3) #=== 5 # 1 + 4
 
 
 
