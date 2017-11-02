@@ -318,6 +318,8 @@ range10.select { |x| x.even? } # => [2,4,6,8,10]
 
 
 
+
+
 ## sort and sort_by 	!!!
 
 range10.sort { |a,b| b <=> a } 
@@ -327,6 +329,14 @@ words.sort_by { |w| w.length }
 # Returns array with sorted word length
 
 
+
+
+
+## step !!!
+
+(1..10).step(2).to_a # => [1,3,5,7,9]
+
+# Moves to the next step of the array ..
 
 
 
