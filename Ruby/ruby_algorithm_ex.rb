@@ -1207,7 +1207,7 @@ end
 
 
 
-# QQ 67 # 7kyu 
+# QQ 67 # 7kyu # step
 
 def sequence_sum(begin_number, end_number, step)
   (begin_number..end_number).step(step).reduce(:+)
@@ -1224,7 +1224,7 @@ end
 
 
 
-# QQ 68 # 6 kyu
+# QQ 68 # 6 kyu # gsub
 
 def autocorrect(input)
   input.gsub( /\b(you|u)\b/i, 'your sister')
@@ -1232,11 +1232,34 @@ def autocorrect(input)
 	# input.gsub!( /\b(u|you|you+)\b/i, "your sister")
 end
 
-p autocorrect 'How are you?' 
+# p autocorrect 'How are you?' 
 
 
 
 
+
+
+
+# QQ 69 # 8 kyu
+
+def correction string
+	string.split.map! do |x|
+		case x.downcase
+			when 'u' then 'you'
+			when 'gonna' then 'are going to'
+			when 'wanna' then 'want to'
+			when 'fuck' then 'f**k'
+			when 'shit' then 's**t'
+			when 'tonite' then 'tonight'
+			else x
+		end
+	end.join ' '
+end
+
+p correction 'Hey how are u ?'
+p correction 'Do u wanna go out ?'
+p correction 'We gonna go out tonite !' 
+p correction 'Fuck this Shit !'
 
 
 
