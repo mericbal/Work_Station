@@ -921,7 +921,7 @@ end
 def can_touch_this? name
 	name.start_with?("r","R") ? "#{name} can touch this" : "#{name} caN'T tocuh this"
 	# or
- 	#name[0] =~ /[Rr]/ ? name + ' can ...' : name + 'caN`T ...' 
+ 	name[0] =~ /[Rr]/ ? name + ' can ...' : name + 'caN`T ...' 
 end
 
 # p can_touch_this? 'Meric'
@@ -1211,11 +1211,34 @@ end
 
 def sequence_sum(begin_number, end_number, step)
   (begin_number..end_number).step(step).reduce(:+)
-end
+end 
 
 # p sequenceSum(2,6,2) #=== 12 # 2 + 4 + 6
 # p sequenceSum(1,5,1) #=== 15 # 1 + 2 + 3 + 4 + 5
 # p sequenceSum(1,5,3) #=== 5 # 1 + 4
+
+
+
+
+
+
+
+
+# QQ 68 # 6 kyu
+
+def autocorrect(input)
+  input.gsub( /\b(you|u)\b/i, 'your sister')
+	# or
+	# input.gsub!( /\b(u|you|you+)\b/i, "your sister")
+end
+
+p autocorrect 'How are you?' 
+
+
+
+
+
+
 
 
 
